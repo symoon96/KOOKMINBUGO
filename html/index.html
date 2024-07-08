@@ -29,21 +29,248 @@
 <body>
     <!-- header -->
     <div id="header">
+        <div class="container">
+            <!-- case1: 기본 -->
+            <h1 class="logo"><a href="javascript:void(0);"></a></h1>
+            <button class="btn-ic btn-gnb-open" type="button" data-bs-toggle="offcanvas" data-bs-target=".gnb"></button>
+            
+            <div class="gnb">
+                <div class="gnb-head">
+                    <button class="btn-ic btn-gnb-close" type="button" dada-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="gnb-body">
+                    <div class="depth01">
+                        <ul>
+                            <li>
+                                <p><i class="ic-gnb01"></i>부고</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">부고 만들기</a></li>
+                                        <li><a href="javascript:void(0);">부고 수정</a></li>
+                                        <li><a href="javascript:void(0);">부고 보내기</a></li>
+                                        <li><a href="javascript:void(0);">부고 관리</a></li>
+                                        <li><a href="javascript:void(0);">추모 관리</a></li>
+                                        <li><a href="javascript:void(0);">부가서비스 관리</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb02"></i>MY</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">마이 페이지</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb03"></i>고객센터</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">이벤트</a></li>
+                                        <li><a href="javascript:void(0);">FAQ</a></li>
+                                        <li><a href="javascript:void(0);">이용약관</a></li>
+                                        <li><a href="javascript:void(0);">개인정보보호정책</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn md fill-dark">로그아웃</button>
+                </div>
+            </div>
+            <!--// case1: 기본-->
 
+            <!-- case2: 서브 -->
+            <button class="btn-ic btn-gnb-back"></button>
+            <h2>이용약관</h2>
+            <!--// case2: 서브 -->
+        </div>
     </div>
     <!-- // header -->
 
     <!-- content -->
     <div id="content" class="main">
         <div class="container">
+            <div class="visual">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <img src="../img/main/@temp_visual01.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <img src="../img/main/@temp_visual02.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <img src="../img/main/@temp_visual03.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
 
+            <button class="btn-obituary">부고 만들기</div>
+
+            <div class="quick">
+                <div class="quick-item">
+                    <a href="javascript:void(0);">
+                        <i class="ic-quick01"></i>
+                        <p>부고 보내기</p>
+                    </a>
+                </div>
+                <div class="quick-item">
+                    <a href="javascript:void(0);">
+                        <i class="ic-quick02"></i>
+                        <p>부고 수정</p>
+                    </a>
+                </div>
+                <div class="quick-item">
+                    <a href="javascript:void(0);">
+                        <i class="ic-quick03"></i>
+                        <p>추모 관리</p>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="list-wrap v1">
+                <ul>
+                    <li>
+                        <div class="item-head">
+                            <span class="label v1 clr01">진행중</span>
+                            <p class="dead">故 홍길동</p>
+                            <div class="dead-info">
+                                <p>남</p>
+                                <p>99세</p>
+                            </div>
+                        </div>
+                        <div class="item-body">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 5.5rem;">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>상주</th>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <th>입실일자</th>
+                                        <td>2024.05.10</td>
+                                    </tr>
+                                    <tr>
+                                        <th>장례식장명</th>
+                                        <td>장례식장명은 이곳에</td>
+                                    </tr>
+                                    <tr>
+                                        <th>호실</th>
+                                        <td>10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="item-foot">
+                            <button class="btn-txt v1 white"><i class="ic-setting white"></i>추모관리</button>
+                            <button class="btn-txt v1 white"><i class="ic-edit white"></i>수정</button>
+                            <button class="btn-txt v1 orange"><i class="ic-delete orange"></i>삭제</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-wrap">
+                <div class="inner">
+                    <div class="btn-wrap vertical">
+                        <button class="btn-link">
+                            <div class="txt-area">
+                                <i class="ic-charge"></i>
+                                <p class="txt txt-gray">수수료 정산</p>
+                            </div>
+                            <div class="etc-area">
+                                <p class="txt-price">1,700,000원</p>
+                            </div>
+                        </button>
+                        <button class="btn-link">
+                            <div class="txt-area">
+                                <i class="ic-community"></i>
+                                <p class="txt txt-gray">커뮤니티</p>
+                            </div>
+                        </button>
+                        <button class="btn-link">
+                            <div class="txt-area">
+                                <i class="ic-rank"></i>
+                                <p class="txt txt-gray">랭킹</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-wrap">
+                <div class="inner">
+                    <div class="btn-wrap vertical">
+                        <button class="btn-link">
+                            <div class="txt-area">
+                                <i class="ic-message"></i>
+                                <p class="txt txt-gray">추천요청 메시지 보내기</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-wrap">
+                <div class="inner">
+                    <div class="tit-wrap v1">
+                        <div class="tit-area">
+                            <i cllass="ic-cs"></i>
+                            <p class="tit v1"></p>
+                        </div>
+                    </div>
+                    <div class="cs-info">
+                        <div class="cs-item">
+                            <i class="ic-cs-call circle"></i>
+                            <p>1588-1234</p>
+                        </div>
+                        <div class="cs-item">
+                            <i class="ic-cs-time circle"></i>
+                            <p>AM 9:00 - PM 6:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <a href="javascript:void(0);"><img src="../img/main/@temp_banner01.png"></a>
+            </div>
+            <div class="banner">
+                <a href="javascript:void(0);"><img src="../img/main/@temp_banner02.png"></a>
+            </div>
+            <div class="banner">
+                <a href="javascript:void(0);"><img src="../img/main/@temp_banner03.png"></a>
+            </div>
         </div>
     </div>
     <!-- // content -->
 
     <!-- footer -->
     <div id="footer">
-
+        <div class="container">
+            <p class="company">
+                <strong>(주)0000 (대표이사000)</strong><br>
+                사업자등록번호 : 000-00-00000<br>
+                통신판매업신고번호 : 제0000-고양덕양-0000<br>
+                경기도 고양시 일산동구 백마로 195 엠시티 섹션동 6층 9012-1<br>
+                이메일 : QWERTY@NAVER.COM<br>
+                개인정보처리책임자 : 김책임<br>
+                COPYRIGHT @ 2024 다큐다. ALL RIGHTS RESERVED.
+            </p>
+        </div>
     </div>
     <!-- // footer -->
 </body>
