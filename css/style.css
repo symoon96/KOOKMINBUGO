@@ -1,5 +1,21 @@
 @charset "utf-8";
 
+/* palette */
+:root,
+[data-bs-theme=light] {
+    /* bg color */
+    --bg-color: #F1F3F5;
+
+    /* color */
+    --color-white #FFFFFF;
+    --color-gray-dark: #343A40;
+
+    /* height size */
+    --ht-smallL: 3.6rem;
+    --ht-medium: 4.8rem;
+    --ht-large: 5.6rem;
+}
+
 /* reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -17,7 +33,8 @@ time, mark, audio, video, button, input { font-family: inherit; margin: 0; paddi
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section { display: block; }
-body { min-height: 100vh; scroll-behavior: smooth; text-rendering: optimizeSpeed; color: #343A40; font-size: 16px; font-family: 'NotoSansKR'; -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
+html {font-size: 62.5%;}
+body { min-height: 100vh; scroll-behavior: smooth; text-rendering: optimizeSpeed; color: #343A40; font-size: 16px; font-family: 'NotoSansKR'; -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; background-color: var(--bg-color);}
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
@@ -154,6 +171,81 @@ select::-ms-expand{ display: none; }
         url('../fonts/Pretendard/Pretendard-Black.svg#Pretendard-Black') format('svg');
 }
 
+/* components */
+/*-------------------------------------------------------------------
+    @elements
+-------------------------------------------------------------------*/
+/* button */
+.btn-wrap{}
+
+.btn {border: 1px solid transparent; padding: 0 0; margin: 0 0; width: 100%;}
+.btn-ic {border: none; padding: 0; margin: 0; display: block; text-indent: -9999px; background-size: 100%; background-repeat: no-repeat; background-position: center;}
+
+.btn.md {height: var(--ht-medium); font-size: 1.6rem;}
+
+.btn.rnd {border-radius: 1rem;}
+
+.btn.fill-dark {background-color: var(--color-gray-dark); color: var(--color-white); border-color: var(--color-gray-dark);}
+
+.btn-gnb-open {width: 2.4rem; height: 2.4rem; background-image: url('../img/icon/ic_gnb_open.png');}
+.btn-gnb-close {width: 2.4rem; height: 2.4rem; background-image: url('../img/icon/ic_gnb_close.png');}
+
+/* icon */
+i[class^='ic-']{}
+
+/* bullet */
+
+/* list */
+.list-wrap{}
+
+.list-wrap.v1{}
+
+/* img list */
+.img-list{}
+
+.img-list.v1{}
+
+/* form, input */
+.inp-wrap{}
+.inp-item{}
+
+.inp-item input[type="text"]{}
+
+.phone .inp-item{}
+
+/* title */
+.tit-wrap{}
+.tit-wrap .tit{}
+
+.tit.v1{}
+
+/* text */
+.txt-warning{}
+.txt-comment{}
+
+/* table */
+.tbl-wrap{}
+.tbl-wrap table{ width: 100%; table-layout: fixed; }
+
+.tbl-wrap.v1{}
+
+/* paging */
+.paging{}
+.paging ul{}
+.paging ul li{}
+.paging ul li a{}
+.paging ul li.front{}
+.paging ul li.prev{}
+.paging ul li.next{}
+.paging ul li.back{}
+
+/*-------------------------------------------------------------------
+    @collections
+-------------------------------------------------------------------*/
+/* form group */
+
+/* form mixins */
+
 /* common */
 /*-------------------------------------------------------------------
     @header
@@ -223,72 +315,6 @@ select::-ms-expand{ display: none; }
 .popup .pop-cont{}
 
 .popup .pop-footer{}
-
-/* components */
-/*-------------------------------------------------------------------
-    @elements
--------------------------------------------------------------------*/
-/* button */
-.btn-wrap{}
-
-.btn{ border: 1px solid transparent; padding: 0 0; margin: 0 0; }
-.btn-ic{ border: none; padding: 0; margin: 0; display: block; text-indent: -9999px; background-size: 100%; background-repeat: no-repeat; background-position: center;}
-
-/* icon */
-i[class^='ic-']{}
-
-/* bullet */
-
-/* list */
-.list-wrap{}
-
-.list-wrap.v1{}
-
-/* img list */
-.img-list{}
-
-.img-list.v1{}
-
-/* form, input */
-.inp-wrap{}
-.inp-item{}
-
-.inp-item input[type="text"]{}
-
-.phone .inp-item{}
-
-/* title */
-.tit-wrap{}
-.tit-wrap .tit{}
-
-.tit.v1{}
-
-/* text */
-.txt-warning{}
-.txt-comment{}
-
-/* table */
-.tbl-wrap{}
-.tbl-wrap table{ width: 100%; table-layout: fixed; }
-
-.tbl-wrap.v1{}
-
-/* paging */
-.paging{}
-.paging ul{}
-.paging ul li{}
-.paging ul li a{}
-.paging ul li.front{}
-.paging ul li.prev{}
-.paging ul li.next{}
-.paging ul li.back{}
-
-/*-------------------------------------------------------------------
-    @collections
--------------------------------------------------------------------*/
-/* form group */
-
-/* form mixins */
 
 /* main */
 
