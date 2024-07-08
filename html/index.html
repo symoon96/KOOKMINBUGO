@@ -32,11 +32,11 @@
         <div class="container">
             <!-- case1: 기본 -->
             <h1 class="logo"><a href="javascript:void(0);"></a></h1>
-            <button class="btn-ic btn-gnb-open" type="button" data-bs-toggle="offcanvas" data-bs-target=".gnb"></button>
+            <button class="btn-ic btn-gnb-open" type="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvas"></button>
             
-            <div class="gnb">
+            <div class="offcanvas gnb" aria-labelledby="offcanvasExampleLabel">
                 <div class="gnb-head">
-                    <button class="btn-ic btn-gnb-close" type="button" dada-bs-dismiss="offcanvas"></button>
+                    <button class="btn-ic btn-gnb-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="gnb-body">
                     <div class="depth01">
@@ -82,8 +82,8 @@
             <!--// case1: 기본-->
 
             <!-- case2: 서브 -->
-            <button class="btn-ic btn-gnb-back"></button>
-            <h2>이용약관</h2>
+            <!-- <button class="btn-ic btn-gnb-back"></button>
+            <h2>이용약관</h2> -->
             <!--// case2: 서브 -->
         </div>
     </div>
@@ -115,24 +115,24 @@
                 </div>
             </div>
 
-            <button class="btn-obituary">부고 만들기</div>
+            <button class="btn-obituary">부고 만들기</button>
 
             <div class="quick">
                 <div class="quick-item">
                     <a href="javascript:void(0);">
-                        <i class="ic-quick01"></i>
+                        <i class="ic-send color"></i>
                         <p>부고 보내기</p>
                     </a>
                 </div>
                 <div class="quick-item">
                     <a href="javascript:void(0);">
-                        <i class="ic-quick02"></i>
+                        <i class="ic-modify color"></i>
                         <p>부고 수정</p>
                     </a>
                 </div>
                 <div class="quick-item">
                     <a href="javascript:void(0);">
-                        <i class="ic-quick03"></i>
+                        <i class="ic-manage color"></i>
                         <p>추모 관리</p>
                     </a>
                 </div>
@@ -189,7 +189,7 @@
                     <div class="btn-wrap vertical">
                         <button class="btn-link">
                             <div class="txt-area">
-                                <i class="ic-charge"></i>
+                                <i class="ic-charge color"></i>
                                 <p class="txt txt-gray">수수료 정산</p>
                             </div>
                             <div class="etc-area">
@@ -198,13 +198,13 @@
                         </button>
                         <button class="btn-link">
                             <div class="txt-area">
-                                <i class="ic-community"></i>
+                                <i class="ic-community color"></i>
                                 <p class="txt txt-gray">커뮤니티</p>
                             </div>
                         </button>
                         <button class="btn-link">
                             <div class="txt-area">
-                                <i class="ic-rank"></i>
+                                <i class="ic-rank color"></i>
                                 <p class="txt txt-gray">랭킹</p>
                             </div>
                         </button>
@@ -217,7 +217,7 @@
                     <div class="btn-wrap vertical">
                         <button class="btn-link">
                             <div class="txt-area">
-                                <i class="ic-message"></i>
+                                <i class="ic-message color"></i>
                                 <p class="txt txt-gray">추천요청 메시지 보내기</p>
                             </div>
                         </button>
@@ -229,7 +229,7 @@
                 <div class="inner">
                     <div class="tit-wrap v1">
                         <div class="tit-area">
-                            <i cllass="ic-cs"></i>
+                            <i cllass="ic-cs color"></i>
                             <p class="tit v1"></p>
                         </div>
                     </div>
