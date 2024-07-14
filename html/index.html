@@ -76,7 +76,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="btn md fill-dark">로그아웃</button>
+                    <button class="btn md rnd fill-dark" data-bs-toggle="modal" data-bs-target="#popAlertLogout">로그아웃</button>
                 </div>
             </div>
             <!--// case1: 기본-->
@@ -273,5 +273,26 @@
         </div>
     </div>
     <!-- // footer -->
+
+    <!-- 팝업: 로그아웃 -->
+    <div class="modal fade" id="popAlertLogout">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">로그아웃</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <p class="txt-alert01">로그아웃하시겠습니까?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-dark" data-bs-dismiss="modal" aria-label="Close">취소</button>
+                    <button class="btn lg fill-blue" data-bs-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 로그아웃 -->
 </body>
 </html>

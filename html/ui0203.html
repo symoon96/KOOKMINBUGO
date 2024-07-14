@@ -83,7 +83,7 @@
 
             <!-- case2: 서브 -->
             <button class="btn-ic btn-gnb-back"></button>
-            <h2>이용약관</h2>
+            <h2>선 정산 신청</h2>
             <!--// case2: 서브 -->
         </div>
     </div>
@@ -91,82 +91,91 @@
 
     <!-- content -->
     <div id="content" class="sub">
-        <div class="join">
+        <div class="mypage">
             <div class="division">
                 <div class="inner">
-                    <p class="tit v2">이용약관 동의</p>
-        
-                    <div class="check v1 mt-4">
-                        <input type="checkbox" name="" id="">
-                        <label for="">
-                            <p>이용약관 <span class="txt-blue">(필수)</span></p>
-                        </label>
+                    <div class="amount-bx dark">
+                        <div class="cont-area">
+                            <p class="txt">12,345,678 원</p>
+                        </div>
+                        <div class="tit-area mt-4">
+                            <p class="tit02">정산 받을 수 있어요</p>
+                        </div>
+                        <button class="btn md rnd fill-blue mt-4" data-bs-toggle="modal" data-bs-target="#popCompleteSettle">지금 정산 받기</button><!-- case1: 정산 신청 전 -->
+                        <!-- <button class="btn md rnd fill-gray mt-4">정산 진행 중</button> --><!-- case2: 정산 신청 후 -->
                     </div>
-        
-                    <div class="agree-area mt-2">
-                        <p>
-                            내용내용내용내용내용내용내용내용내용내용내용내용내
-                            내용내용내용내용내용내용내용내용내용내용내용내용내
-                            내용내용내용내용내용내용내용내용내용내용내용내용내
-                            내용내용내용내용내용내용내용내용내용내용내용내용내
-                            내용내용내용내용내용내용내용내용내용내용내용내용내
-                        </p>
-                    </div>
-                    
-                    <div class="check v1 mt-4">
-                        <input type="checkbox" name="" id="">
-                        <label for="">
-                            <p>개인정보 수집 및 이용 <span class="txt-blue">(필수)</span></p>
-                        </label>
-                    </div>
-        
-                    <div class="agree-area mt-2">
-                        <p>
-                            내용내용내용내용내용내용내용내용내용내용내용내용내
-                            내용내용내용내용내용내용내용내용내용내용내용내용내
-                            내용내용내용내용내용내용내용내용내용내용내용내용내
-                            내용내용내용내용내용내용내용내용내용내용내용내용내
-                            내용내용내용내용내용내용내용내용내용내용내용내용내
-                        </p>
-                    </div>
-        
-                    <button class="btn md rnd fill-dark mt-4"><i class="ic-agree white"></i>모두 동의합니다.</button>
+                    <p class="txt-note mt-2">
+                        회원가입시 기재한 계좌로 3.3% 세금 공제 후 3 영업일 후 입금됩니다. 정산 후 <strong>24시간 후</strong> 자동입금 확인됩니다.
+                    </p>
                 </div>
             </div>
+            
             <div class="division">
                 <div class="inner">
-                    <p class="tit v2">가입유형 선택</p>
-        
-                    <div class="d-flex column-gap-4">
-                        <div class="radio v1 mt-4">
-                            <input type="radio" name="" id="" checked>
-                            <label for="">
-                                <p>장례지도사</p>
-                            </label>
-                        </div>
-                        <div class="radio v1 mt-4">
-                            <input type="radio" name="" id="">
-                            <label for="">
-                                <p>일반회원 (개인,단체)</p>
-                            </label>
-                        </div>
+                    <p class="tit v2 text-center">정산 받을 일자를 선택해 주세요</p>
+                    <!-- case1: 선 정산 내역이 있을 경우 -->
+                    <div class="list-wrap v3 mt-2">
+                        <table>
+                            <colgroup>
+                                <col style="width: 40%;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="tit-area">
+                                            <div class="check v2"><input type="checkbox" name="" id="" checked>
+                                                <label for=""></label>
+                                            </div>
+                                            <p class="tit">2024.05.04</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="price">+100,000 원</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="tit-area">
+                                            <div class="check v2"><input type="checkbox" name="" id="">
+                                                <label for=""></label>
+                                            </div>
+                                            <p class="tit">2024.05.04</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="price">+100,000 원</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="tit-area">
+                                            <div class="check v2"><input type="checkbox" name="" id="">
+                                                <label for=""></label>
+                                            </div>
+                                            <p class="tit">2024.05.04</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="price">+100,000 원</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                    <!--// case1: 선 정산 내역이 있을 경우 -->
+
+                    <!-- case2: 선 정산 내역이 없을 경우 -->
+                    <!-- <div class="no-data">
+                        <i class="ic-nodata"></i>
+                        <p>정산 받을 일자가 없습니다.</p>
+                    </div> -->
+                    <!--// case2: 선 정산 내역이 없을 경우 -->
                 </div>
             </div>
-        
         </div>
     </div>
     <!-- // content -->
-
-    <!-- footer -->
-    <div id="footer">
-        <div class="float">
-            <div class="inner">
-                <div class="btn-wrap"><button class="btn lg fill-blue" disabled>다음</button></div>
-            </div>
-        </div>
-    </div>
-    <!-- // footer -->
 
     <!-- 팝업: 로그아웃 -->
     <div class="modal fade" id="popAlertLogout">
@@ -188,5 +197,35 @@
         </div>
     </div>
     <!--// 팝업: 로그아웃 -->
+
+    <!-- 팝업: 신청 완료 -->
+    <div class="modal fade" id="popCompleteSettle">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">신청 완료</h1>
+                </div>
+                <div class="modal-body">
+                    <p class="tit v3 txt-blue justify-content-center"><i class="ic-complete circle blue"></i>선정산 신청이 완료되었습니다.</p>
+                    <div class="guide-bx mt-4">
+                        <p class="text01">
+                            회원가입시 기재한 계좌로 <br>
+                            빠른 시간내에 입금해 드리겠습니다.
+                        </p>
+                        <p class="text02 mt-2">업무시간  08:00 ~ 18:00</p>
+                        <p class="text03 mt-2">
+                            당일10:00 이전에 접수된 정산 신청은 <br>
+                            금일 지급되며, 이후 신청에 한하여 <br>
+                            다음날 입금될 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-blue" data-bs-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 신청 완료 -->
 </body>
 </html>

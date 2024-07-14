@@ -76,7 +76,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="btn md fill-dark">로그아웃</button>
+                    <button class="btn md rnd fill-dark" data-bs-toggle="modal" data-bs-target="#popAlertLogout">로그아웃</button>
                 </div>
             </div> -->
             <!--// case1: 기본-->
@@ -84,7 +84,7 @@
             <!-- case2: 서브 -->
             <button class="btn-ic btn-gnb-back"></button>
             <h2>마이 페이지</h2>
-            <button class="btn-txt v2 gray">로그아웃</button>
+            <button class="btn-txt v2 txt-red" data-bs-toggle="modal" data-bs-target="#popAlertLogout">로그아웃</button>
             <!--// case2: 서브 -->
         </div>
     </div>
@@ -94,70 +94,187 @@
     <div id="content" class="sub">
         <div class="mypage">
             <div class="division">
-                <div class="profile">
-                    <div class="photo">
-                        <img src="../img/sub/@temp_profile.png" alt="">
-                        <button class="btn-ic btn-modify color circle"></button>
-                    </div>
-                    <div class="nick">
-                        <p>사용자 닉네임</p>
-                        <button class="btn-ic btn-modify color circle"></button>
-                    </div>
-                </div>
-
-                <div class="amount-bx blue">
-                    <div class="tit-area">
-                        <p class="tit">오늘(2024.05.11) 받으실 정산 금액</p>
-                    </div>
-                    <div class="cont-area">
-                        <p class="txt">85,100 원</p>
-                        <button class="btn-more whit">자세히</button>
-                    </div>
-                </div>
-
-                <div class="amount-bx dark">
-                    <div class="tit-area">
-                        <p class="tit">선 정산 가능 금액</p>
-                    </div>
-                    <div class="cont-area">
-                        <p class="txt">85,100 원</p>
-                        <button class="btn-more whit">신청</button>
-                    </div>
-                </div>
-
-                <div class="btn-wrap vertical mt-2">
-                    <button class="btn-link line">
-                        <div class="txt-area">
-                            <i class="ic-message color"></i>
-                            <p class="txt txt-gray">추천요청 메시지 보내기</p>
+                <div class="inner">
+                    <div class="profile">
+                        <div class="photo">
+                            <img src="../img/sub/@temp_profile.png" alt="">
+                            <button class="btn-ic btn-modify color circle"></button>
                         </div>
-                    </button>
+                        <div class="nick">
+                            <p>사용자 닉네임</p>
+                            <button class="btn-ic btn-modify color circle"></button>
+                        </div>
+                    </div>
+
+                    <div class="amount-bx blue mt-8">
+                        <div class="tit-area">
+                            <p class="tit01">오늘(2024.05.11) 받으실 정산 금액</p>
+                        </div>
+                        <div class="cont-area">
+                            <p class="txt">85,100 원</p>
+                            <button class="btn-more white">자세히</button>
+                        </div>
+                    </div>
+
+                    <div class="amount-bx dark mt-2">
+                        <div class="tit-area">
+                            <p class="tit01">선 정산 가능 금액</p>
+                        </div>
+                        <div class="cont-area">
+                            <p class="txt">85,100 원</p>
+                            <button class="btn-more white">신청</button>
+                        </div>
+                    </div>
+
+                    <div class="btn-wrap vertical mt-2">
+                        <button class="btn-link line">
+                            <div class="txt-area">
+                                <i class="ic-message color"></i>
+                                <p class="txt txt-gray">추천요청 메시지 보내기</p>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="division">
-                <div class="btn-wrap vertical">
-                    <button class="btn-link">
-                        <div class="txt-area">
-                            <i class="ic-user color"></i>
-                            <p class="txt txt-gray">회원정보 수정</p>
-                        </div>
-                    </button>
-                    <button class="btn-link">
-                        <div class="txt-area">
-                            <i class="ic-dashboard color"></i>
-                            <p class="txt txt-gray">서비스 판매 현황</p>
-                        </div>
-                    </button>
-                    <button class="btn-link">
-                        <div class="txt-area">
-                            <i class="ic-secede color"></i>
-                            <p class="txt txt-orange">회원탈퇴</p>
-                        </div>
-                    </button>
+                <div class="inner">
+                    <div class="btn-wrap vertical">
+                        <button class="btn-link" data-bs-toggle="modal" data-bs-target="#popAlertInputPassword">
+                            <div class="txt-area">
+                                <i class="ic-user color"></i>
+                                <p class="txt txt-gray">회원정보 수정</p>
+                            </div>
+                        </button>
+                        <button class="btn-link">
+                            <div class="txt-area">
+                                <i class="ic-dashboard color"></i>
+                                <p class="txt txt-gray">서비스 판매 현황</p>
+                            </div>
+                        </button>
+                        <button class="btn-link" data-bs-toggle="modal" data-bs-target="#popAlertSecede">
+                            <div class="txt-area">
+                                <i class="ic-secede color"></i>
+                                <p class="txt txt-orange">회원탈퇴</p>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- // content -->
+
+    <!-- 팝업: 로그아웃 -->
+    <div class="modal fade" id="popAlertLogout">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">로그아웃</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <p class="txt-alert01">로그아웃하시겠습니까?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-dark" data-bs-dismiss="modal" aria-label="Close">취소</button>
+                    <button class="btn lg fill-blue" data-bs-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 로그아웃 -->
+
+    <!-- 팝업: 비밀번호 입력 -->
+    <div class="modal fade" id="popAlertInputPassword">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">비밀번호 입력</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <p class="txt-alert02">비밀번호를 입력해 주세요</p>
+                        <input type="text" name="" id="" placeholder="example@company.com">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-blue" data-bs-target="#popAlertErrorPassword" data-bs-toggle="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 비밀번호 입력 -->
+
+    <!-- 팝업: 비밀번호 에러 -->
+    <div class="modal fade" id="popAlertErrorPassword">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">알림</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <i class="ic-warning red"></i>
+                        <p class="txt-alert02 mt-2">비밀번호가 올바르지 않습니다.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-blue" data-bs-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 비밀번호 에러 -->
+
+    <!-- 팝업: 회원탈퇴 입력 -->
+    <div class="modal fade" id="popAlertSecede">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">회원탈퇴</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <p class="txt-alert01">
+                            회원탈퇴시 추가적인 서비스 이용 및 <br>
+                            수수료 정산이 불가능합니다.
+                        </p>
+                        <p class="txt-alert02 mt-1">탈퇴하시겠습니까?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-orange" data-bs-target="#popAlertCompleteSecede" data-bs-toggle="modal">회원탈퇴</button>
+                    <button class="btn lg fill-dark" data-bs-dismiss="modal" aria-label="Close">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 회원탈퇴 입력 -->
+
+    <!-- 팝업: 회원탈퇴 완료 -->
+    <div class="modal fade" id="popAlertCompleteSecede">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">알림</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <i class="ic-complete green"></i>
+                        <p class="txt-alert02 mt-2">회원탈퇴가 완료되었습니다.</p>
+                        <p class="txt-alert01 mt-1">
+                            지금까지 국민부고와 함께 해 주셔서 <br>
+                            감사합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-blue" data-bs-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 회원탈퇴 완료 -->
 </body>
 </html>
