@@ -1,0 +1,567 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>국민부고</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- dist/css -->
+    <link href="../dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/bootstrap.bundle.js"></script>
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <!-- case1: 기본 -->
+            <!-- <h1 class="logo"><a href="javascript:void(0);"></a></h1>
+            <button class="btn-ic btn-gnb-open" type="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvas"></button>
+            
+            <div class="offcanvas gnb" aria-labelledby="offcanvasExampleLabel">
+                <div class="gnb-head">
+                    <button class="btn-ic btn-gnb-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="gnb-body">
+                    <div class="depth01">
+                        <ul>
+                            <li>
+                                <p><i class="ic-gnb01"></i>부고</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">부고 만들기</a></li>
+                                        <li><a href="javascript:void(0);">부고 수정</a></li>
+                                        <li><a href="javascript:void(0);">부고 보내기</a></li>
+                                        <li><a href="javascript:void(0);">부고 관리</a></li>
+                                        <li><a href="javascript:void(0);">추모 관리</a></li>
+                                        <li><a href="javascript:void(0);">부가서비스 관리</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb02"></i>MY</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">마이 페이지</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb03"></i>고객센터</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">이벤트</a></li>
+                                        <li><a href="javascript:void(0);">FAQ</a></li>
+                                        <li><a href="javascript:void(0);">이용약관</a></li>
+                                        <li><a href="javascript:void(0);">개인정보보호정책</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn md rnd fill-dark" data-bs-toggle="modal" data-bs-target="#popAlertLogout">로그아웃</button>
+                </div>
+            </div> -->
+            <!--// case1: 기본-->
+
+            <!-- case2: 서브 -->
+            <button class="btn-ic btn-gnb-back"></button>
+            <h2>부고 만들기</h2>
+            <button class="btn-ic btn-help"></button>
+            <!--// case2: 서브 -->
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content" class="sub">
+        <div class="obituary">
+            <div class="division">
+                <div class="inner">
+                    <p class="txt-guide"><strong>*필수항목</strong>만 입력하시면 부고가 완성됩니다.</p>
+
+                    <p class="tit v2 mt-6">고인정보</p>
+
+                    <div class="d-flex align-items-start gap-3 mt-4">
+                        <div class="col">
+                            <div class="form row">
+                                <div class="form-tit">
+                                    <div class="tit-area">
+                                        <p class="tit">고인명<strong class="txt-blue">*</strong></p>
+                                    </div>
+                                </div>
+                                <div class="form-cont">
+                                    <input type="text" name="" id="" placeholder="고인명">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form row col">
+                                <div class="form-tit">
+                                    <div class="tit-area">
+                                        <p class="tit">성별<strong class="txt-blue">*</strong></p>
+                                    </div>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="d-flex align-items-start gap-1 pt-2">
+                                        <div class="d-flex align-items-start gap-1 pt-2">
+                                            <div class="radio v2">
+                                                <input type="radio" name="" id="" checked>
+                                                <label for="">
+                                                    <p>남자</p>
+                                                </label>
+                                            </div>
+                                            <div class="radio v2">
+                                                <input type="radio" name="" id="">
+                                                <label for="">
+                                                    <p>여자</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">나이</p>
+                            </div>
+                        </div>
+                        <div class="form-cont">
+                            <div class="d-flex align-items-start gap-3">
+                                <input tyype="text" name="" id="" plasholder="00" class="flex-fill">
+                                <select name="" id="" class="select v1 flex-fill">
+                                    <option value="">별세</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">종교<strong class="txt-blue">*</strong></p>
+                            </div>
+                        </div>
+                        <div class="form-cont">
+                            <div class="d-flex align-items-start gap-3">
+                                <select name="" id="" class="select v1 flex-fill">
+                                    <option value="">선택</option>
+                                </select>
+                                <input tyype="text" name="" id="" plasholder="직분/세레명" class="flex-fill">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">영정사진</p>
+                            </div>
+                        </div>
+                        <div class="form-cont pt-2">
+                            <div class="upload">
+                                <div class="preview portrait"></div>
+                                <div class="btn-wrap vertical row-gap-1">
+                                    <button class="btn sm rounded-3 line-blue"><i class="ic-portrait blue"></i>사진등록</button>
+                                    <button class="btn sm rounded-3 line-orange"><i class="ic-delete orange"></i>사진삭제</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="division">
+                <div class="inner">
+                    <p class="tit v2">장례정보</p>
+
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">장례식장<strong class="txt-blue">*</strong></p>
+                            </div>
+                        </div>
+                        <div class="tit-cont">
+                            <div class="search">
+                                <input type="text" name="" id="" placeholder="상조사 검색">
+                                <button class="btn-ic btn-search dark" data-bs-toggle="modal" data-bs-target="#popSearchFuneral"></button>
+                            </div>
+                            <select name="" id="" class="select v1 mt-1">
+                                <option value="">빈소 선택</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">임종일시<strong class="txt-blue">*</strong></p>
+                            </div>
+                        </div>
+                        <div class="form-cont">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="flex-fill">
+                                    <input type="date" name="" id="" class="date">
+                                </div>
+                                <div class="inp-wrap flexx-fill d-flex align-items-start gap-3">
+                                    <div class="has-unit inp-item col">
+                                        <select name="" id="" class="select v1">
+                                            <option value="">00</select>
+                                        </select>
+                                        <p class="unit">시</p>
+                                    </div>
+                                    <div class="inp-item flex-fill col">
+                                        <p class="unit">경</p>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">입실일시</p>
+                            </div>
+                        </div>
+                        <div class="form-cont">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="flex-fill">
+                                    <input type="date" name="" id="" class="date">
+                                </div>
+                                <div class="inp-wrap flex-fill d-flex align-items-start gap-3">
+                                    <div class="has-unit inp-item col">
+                                        <select name="has-unit inp-item col">
+                                            <option value="">00</option>
+                                        </select>
+                                        <p class="unit">시</p>
+                                    </div>
+                                    <div class="has-unit inp-item col">
+                                        <select name="has-unit inp-item col">
+                                            <option value="">00</option>
+                                        </select>
+                                        <p class="unit">분</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">입실일시</p>
+                            </div>
+                        </div>
+                        <div class="form-cont">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="flex-fill">
+                                    <input type="date" name="" id="" class="date">
+                                </div>
+                                <div class="inp-wrap flex-fill d-flex align-items-start gap-3">
+                                    <div class="has-unit inp-item col">
+                                        <select name="has-unit inp-item col">
+                                            <option value="">00</option>
+                                        </select>
+                                        <p class="unit">시</p>
+                                    </div>
+                                    <div class="has-unit inp-item col">
+                                        <select name="has-unit inp-item col">
+                                            <option value="">00</option>
+                                        </select>
+                                        <p class="unit">분</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="check v2 mt-2">
+                                <input type="checkbox" name="" id="">
+                                <label for="">
+                                    <p>대표상조여부</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">장지</p>
+                            </div>
+                        </div>
+                        <div class="form-cont">
+                            <input type="text" name="" id="" placeholder="장지ㅣ를 입력하세요">
+                        </div>
+                    </div>
+
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">상조사</p>
+                            </div>
+                        </div>
+                        <div class="form-cont">
+                            <div class="search">
+                                <input type="text" name="" id="" placeholder="상조사 검색">
+                                <button class="btn-ic btn-search dark" data-bs-toggle="modal" data-bs-target="#popSearchFuneral"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">로고등록</p>
+                            </div>
+                        </div>
+                        <div class="form row mt-4">
+                            <div class="form-tit">
+                                <p class="tit">로고등록</p>
+                            </div>
+                            <div class="form-cont pt-2">
+                                <div class="upload">
+                                    <div class="preview">
+                                        <img src="../img/sub/@temp_logo.png" alt="">
+                                    </div>
+                                    <div class="btn-wrap vertical row-gap-1">
+                                        <button class="btn sm rounded-3 line-blue"><i class="ic-photo blue"></i>로고등록</button>
+                                        <button class="btn sm rounded-3 line-orange"><i class="ic-delete orange"></i>로고삭제</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="division">
+                <div class="inner">
+                    <p class="tit v2">상주정보</p>
+
+                    <div class="list-wrap v5">
+                        <ul>
+                            <li>
+                                <div class="item-head">
+                                    <p>아들</p>
+                                </div>
+                                <div class="item-body">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="tit-area">
+                                                        <p class="tit">홍길동</p>
+                                                        <p class="num">010-1234-5678</p>
+                                                    </div>
+                                                    <p class="account-num"><span class="label v3">국민</span><span class="name">홍길동</span><span class="num">23333-2346-3442</span></p>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-delete orange"></button>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-up gray" disabled></button>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-down gray"></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="tit-area">
+                                                        <p class="tit">홍길동</p>
+                                                        <p class="num">010-1234-5678</p>
+                                                    </div>
+                                                    <p class="account-num"><span class="label v3">국민</span><span class="name">홍길동</span><span class="num">23333-2346-3442</span></p>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-delete orange"></button>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-up gray"></button>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-down gray"></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="tit-area">
+                                                        <p class="tit">홍길동</p>
+                                                        <p class="num">010-1234-5678</p>
+                                                    </div>
+                                                    <p class="account-num"><span class="label v3">국민</span><span class="name">홍길동</span><span class="num">23333-2346-3442</span></p>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-delete orange"></button>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-up gray"></button>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-down gray" disabled></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-head">
+                                    <p>딸</p>
+                                </div>
+                                <div class="item-body">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="tit-area">
+                                                        <p class="tit">홍길동</p>
+                                                        <p class="num">010-1234-5678</p>
+                                                    </div>
+                                                    <p class="account-num"><span class="label v3">국민</span><span class="name">홍길동</span><span class="num">23333-2346-3442</span></p>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-delete orange"></button>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-up gray" disabled></button>
+                                                </td>
+                                                <td>
+                                                    <button cllass="btn-ic btn-down gray" disabled></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn sm line-blue rnd"><i class="ic-write blue"></i>상주정보 입력</button>
+                </div>
+            </div>
+            <div class="division">
+                <div class="inner">
+                    <p class="tit v2">알리는 말씀</p>
+                    <p class="txt-note text-start">*미입력시 노출되지 않습니다.</p>
+
+                    <textarea name="" id="" class="v2" placeholder="조문시 유의사항, 종교행사 시간 안내등&#13;&#10;조문객에게 알릴 내용을 입력해 주세요."></textarea>
+                    <div class="radio v1 mt-4">
+                        <input type="radio" name="" id="" checked>
+                        <label for="">
+                            <p>상주 연락처 보이지 않기</p>
+                        </label>
+                    </div>
+                    <div class="radio v1 mt-2">
+                        <input type="radio" name="" id="" checked>
+                        <label for="">
+                            <p>부고장에 동영상 보이지 않기</p>
+                        </label>
+                    </div>
+                    <div class="radio v1 mt-2">
+                        <input type="radio" name="" id="" checked>
+                        <label for="">
+                            <p>고인 성별/나이 보이지 않기</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="division">
+                <div class="inner">
+                    <p class="tit v2">디자인선택</p>
+                        <div class="d-flex align-items-start gap-1 pt-2">
+                            <div class="radio v2">
+                                <input type="radio" name="" id="" checked>
+                                <label for="">
+                                    <p>남자</p>
+                                </label>
+                            </div>
+                            <div class="radio v2">
+                                <input type="radio" name="" id="">
+                                <label for="">
+                                    <p>여자</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="division">
+                <div class="inner">
+                    <p class="tit v2">부가 서비스 신청</p>
+                    <p class="txt-note text-start">*미입력시 노출되지 않습니다.</p>
+                    <div class="radio v1 mt-4">
+                        <input type="radio" name="" id="" checked>
+                        <label for="">
+                            <p>프리미엄 영상 서비스</p>
+                        </label>
+                    </div>
+                    <div class="radio v1 mt-2">
+                        <input type="radio" name="" id="" checked>
+                        <label for="">
+                            <p>영정사진 보정 서비스</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <div id="footer">
+        <div class="float">
+            <div class="inner">
+                <div class="btn-wrap">
+                    <button class="btn lg line-blue">임시저장<button>
+                    <button class="btn lg fill-blue">저장완료<button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업: 로그아웃 -->
+    <div class="modal fade" id="popAlertLogout">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">로그아웃</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <p class="txt-alert01">로그아웃하시겠습니까?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-dark" data-bs-dismiss="modal" aria-label="Close">취소</button>
+                    <button class="btn lg fill-blue" data-bs-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 로그아웃 -->
+</body>
+</html>
