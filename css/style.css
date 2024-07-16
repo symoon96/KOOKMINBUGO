@@ -820,6 +820,7 @@ i[class^='ic-'] {flex: none; display: block; background-repeat: no-repeat; backg
 
 .label.v3 {display: block; padding: 0.1rem 0.4rem; font-size: 1.3rem; border-radius: 0.4rem;}
 .label.v3.clr01 {background-color: #F1F3F5; color: var(--color-gray);}
+.label.v3.clr02 {background-color: #CED4DA; color: var(--color-gray-dark);}
 
 /* list */
 .list-wrap{}
@@ -911,6 +912,8 @@ i[class^='ic-'] {flex: none; display: block; background-repeat: no-repeat; backg
 
 .tit-wrap.v1 {border-bottom: 1px solid #E9ECEF; display: flex; justify-content: space-between; align-items: center; height: 5.6rem}
 .tit-wrap.v1 .tit-area {display: flex; align-items: center; justify-content: flex-start; gap: 0 0.4rem;}
+
+.tit-wrap.v2 {display: flex; justify-content: space-between; align-items: center;}
 
 .tit.v1 {font-weight: 500; color: var(--color-gray); font-size: 1.6rem;}
 .tit.v2 {font-weight: 600; color: var(--color-gray-dark); font-size: 1.6rem;}
@@ -1018,12 +1021,13 @@ input[type="password"]:focus {border-bottom-color: #343A40; outline: none;}
 .check.v1 input[type="checkbox"] + label p {padding-left: 2.4rem; font-size: 1.4rem; line-height: 1.215; padding-top: 0.15rem; padding-bottom: 0.15rem;}
 .check.v1 input[type="checkbox"] + label::before {content: ""; width: 2rem; height: 2rem; background: url('../img/icon/ic_inp_check_off01.png') no-repeat center; background-size: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 .check.v1 input[type="checkbox"]:checked + label::before {background: url('../img/icon/ic_inp_check_on01.png') no-repeat center; background-size: 100%;}
+.check.v1 input[type="checkbox"]:disabled + label p {color: #CED4DA}
 
 .check.v2 {width: fit-content;}
 .check.v2 input[type="checkbox"] {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
 .check.v2 input[type="checkbox"] + label {position: relative; min-width: 1.6rem; min-height: 1.6rem; width: fit-content; display: block;}
 .check.v2 input[type="checkbox"] + label p {padding-left: 2rem; font-size: 1.3rem; line-height: 1.231; color: var(--color-main)}
-.check.v2 input[type="checkbox"] + label::before {content: ""; width: 1.6rem; height: 1.6rem; background: url('../img/icon/ic_inp_check_off02.png') no-repeat center; background-size: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.check.v2 input[type="checkbox"] + label::before {content: ""; width: 1.6rem; height: 1.6rem; background: #ffffff url('../img/icon/ic_inp_check_off02.png') no-repeat center; background-size: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 .check.v2 input[type="checkbox"]:checked + label::before {background: url('../img/icon/ic_inp_check_on02.png') no-repeat center; background-size: 100%;}
 
 .check.v3 {width: fit-content;}
@@ -1249,5 +1253,11 @@ input[type="password"]:focus {border-bottom-color: #343A40; outline: none;}
 .share ul li a {display: block; text-align: center;}
 .share ul li a i {margin: 0 auto;}
 .share ul li a p {color: var(--color-gray); font-size: 1.3rem; font-weight: 500; margin-top: 0.4rem;}
+
+.attention-bx {padding: 1.2rem 2rem; background-color: #EDF2FF; border-radius: 1rem;}
+.attention-bx ul li {color: #888E96; font-size: 1.4rem; font-weight: 500; padding-left: 1.8rem; position: relative; line-height: 1.4;}
+.attention-bx ul li + li {margin-top: 1rem;}
+.attention-bx ul li::before {content: ""; width: 0.2rem; height: 0.2rem; position: absolute; background-color: #888E96; border-radius: 50%; left; 0.8rem; top: 0.8rem;}
+.attention-bx p {color: #888E96; font-size: 1.4rem; font-weight: 500; line-height: 1.4;}
 
 /* 팝업 */
