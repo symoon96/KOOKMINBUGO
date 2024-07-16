@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>국민부고</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- dist/css -->
+    <link href="../dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/bootstrap.bundle.js"></script>
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <!-- case1: 기본 -->
+            <!-- <h1 class="logo"><a href="javascript:void(0);"></a></h1>
+            <button class="btn-ic btn-gnb-open" type="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvas"></button>
+            
+            <div class="offcanvas gnb" aria-labelledby="offcanvasExampleLabel">
+                <div class="gnb-head">
+                    <button class="btn-ic btn-gnb-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="gnb-body">
+                    <div class="depth01">
+                        <ul>
+                            <li>
+                                <p><i class="ic-gnb01"></i>부고</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">부고 만들기</a></li>
+                                        <li><a href="javascript:void(0);">부고 수정</a></li>
+                                        <li><a href="javascript:void(0);">부고 보내기</a></li>
+                                        <li><a href="javascript:void(0);">부고 관리</a></li>
+                                        <li><a href="javascript:void(0);">추모 관리</a></li>
+                                        <li><a href="javascript:void(0);">부가서비스 관리</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb02"></i>MY</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">마이 페이지</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb03"></i>고객센터</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">이벤트</a></li>
+                                        <li><a href="javascript:void(0);">FAQ</a></li>
+                                        <li><a href="javascript:void(0);">이용약관</a></li>
+                                        <li><a href="javascript:void(0);">개인정보보호정책</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn md rnd fill-dark" data-bs-toggle="modal" data-bs-target="#popAlertLogout">로그아웃</button>
+                </div>
+            </div> -->
+            <!--// case1: 기본-->
+
+            <!-- case2: 서브 -->
+            <button class="btn-ic btn-gnb-back"></button>
+            <h2>부고 보내기</h2>
+            <!--// case2: 서브 -->
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content" class="sub">
+        <div class="obituary">
+            <div class="division">
+                <div class="inner">
+                    <div class="tit-wrap v2">
+                        <div class="tit-area">
+                            <p class="tit v2">상주에게 보내기</p>
+                        </div>
+                        <div class="etc-area">
+                            <div class="check v1">
+                                <input type="checkbox" name="" id="">
+                                <label for="">
+                                    <p>모두 선택</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-wrap v5 mt-4">
+                        <ul>
+                            <li>
+                                <div class="item-head">
+                                    <div class="d-flex align-items-center justify-content-start gap-2">
+                                        <div class="check v2">
+                                            <input type="checkbox" name="" id="" checked>
+                                            <label for=""></label>
+                                        </div>
+                                        <span class="label v3 clr01">아들</span>
+                                        <p>홍길동</p>
+                                        <p>010-1234-5678</p>
+                                    </div>
+                                </div>
+                                <div class="item-body">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="" checked>
+                                            <label for="">
+                                                <p>개인계좌</p>
+                                            </label>
+                                        </div>
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">
+                                                <p>대표계좌</p>
+                                            </label>
+                                        </div>
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">
+                                                <p>모든계자</p>
+                                            </label>
+                                        </div>
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">
+                                                <p>계좌없음</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-head">
+                                    <div class="d-flex align-items-center justify-content-start gap-2">
+                                        <div class="check v2">
+                                            <input type="checkbox" name="" id="">
+                                            <label for=""></label>
+                                        </div>
+                                        <span class="label v3 clr01">아들</span>
+                                        <p>홍길동</p>
+                                        <p>010-1234-5678</p>
+                                    </div>
+                                </div>
+                                <div class="item-body">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="" checked>
+                                            <label for="">
+                                                <p>개인계좌</p>
+                                            </label>
+                                        </div>
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="" disabled>
+                                            <label for="">
+                                                <p>대표계좌</p>
+                                            </label>
+                                        </div>
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">
+                                                <p>모든계자</p>
+                                            </label>
+                                        </div>
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">
+                                                <p>계좌없음</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-head">
+                                    <div class="d-flex align-items-center justify-content-start gap-2">
+                                        <div class="check v2">
+                                            <input type="checkbox" name="" id="">
+                                            <label for=""></label>
+                                        </div>
+                                        <span class="label v3 clr01">아들</span>
+                                        <p>홍길동</p>
+                                        <p>010-1234-5678</p>
+                                    </div>
+                                </div>
+                                <div class="item-body">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="" checked>
+                                            <label for="">
+                                                <p>개인계좌</p>
+                                            </label>
+                                        </div>
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">
+                                                <p>대표계좌</p>
+                                            </label>
+                                        </div>
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">
+                                                <p>모든계자</p>
+                                            </label>
+                                        </div>
+                                        <div class="check v1">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">
+                                                <p>계좌없음</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="attention-bx px-2 mt-4">
+                        <ul>
+                            <li>계좌노출방식을 설정하고 부고를 보내시면 설정 값이 저장됩니다.</li>
+                            <li>부고 안내 메시지는 카카오톡으로 발송되며, 수신자 휴대폰 카카오톡 미이용시 문자 메시지로 자동 전환되어 발송됩니다.</li>
+                        </ul>
+                    </div>
+
+                    <button class="btn lg rnd fill-blue mt-4">선택한 상주에게 부고 보내기</button>
+                </div>
+            </div>
+
+            <div class="division">
+                <div class="inner">
+                    <p class="tit v2">다른 번호로 보내기</p>
+
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <p class="tit">휴대폰 번호</p>
+                        </div>
+
+                        <div class="form-cont">
+                            <div class="inp-wrap">
+                                <div class="inp-item">
+                                    <select name="" id="" class="select v1">
+                                        <option value="">010</option>
+                                    </select>
+                                </div>
+                                <div class="inp-item">
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div class="inp-item">
+                                    <input type="text" name="" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attention-bx mt-4">
+                        <p>상주 아닌 번호로 부고를 보낼 경우 모든 계좌 노출로 설정됩니다.</p>
+                    </div>
+
+                    <button class="btn lg rnd fill-blue mt-4">입력한 번호로 부고 보내기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <div id="footer">
+        <div class="float">
+            <div class="inner">
+                <div class="btn-wrap">
+                    <button class="btn lg line-blue">임시저장<button>
+                    <button class="btn lg fill-blue">저장완료<button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 팝업: 로그아웃 -->
+    <div class="modal fade" id="popAlertLogout">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">로그아웃</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <p class="txt-alert01">로그아웃하시겠습니까?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-dark" data-bs-dismiss="modal" aria-label="Close">취소</button>
+                    <button class="btn lg fill-blue" data-bs-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 로그아웃 -->
+</body>
+</html>
