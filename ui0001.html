@@ -10,21 +10,21 @@
     <meta name="format-detection" content="telephone=no" />
     
     <!-- dist/css -->
-    <link href="../dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+    <link href="./dist/css/bootstrap.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+    <link href="./dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
 
     <!-- custom css -->
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
 
     <!-- jquery -->
-    <script src="../js/jquery.min.js"></script>
+    <script src="./js/jquery.min.js"></script><!-- 20240717 수정 -->
 
     <!-- dist/js -->
-    <script src="../dist/js/bootstrap.bundle.js"></script>
-    <script src="../dist/js/swiper-bundle.min.js"></script>
+    <script src="./dist/js/bootstrap.bundle.js"></script><!-- 20240717 수정 -->
+    <script src="./dist/js/swiper-bundle.min.js"></script><!-- 20240717 수정 -->
     
     <!-- custom js -->
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script><!-- 20240717 수정 -->
 </head>
 <body>
     <!-- header -->
@@ -83,7 +83,7 @@
 
             <!-- case2: 서브 -->
             <button class="btn-ic btn-gnb-back"></button>
-            <h2>추천 요청 메시지 보내기</h2>
+            <h2>이용약관</h2>
             <!--// case2: 서브 -->
         </div>
     </div>
@@ -91,66 +91,82 @@
 
     <!-- content -->
     <div id="content" class="sub">
-        <div class="mypage">
+        <div class="join">
             <div class="division">
                 <div class="inner">
-                    <div class="guide-bx">
-                        <p class="text04">
-                            추천인이 화환 판매시 <br>
-                            건당 5,000원의 추가 수수료 지급!
-                        </p>
-                        <p class="text05 mt-1">
-                            하단의 추천 메시지를 수정/복사하여 공유해 보세요
+                    <p class="tit v2">이용약관 동의</p>
+        
+                    <div class="check v1 mt-4">
+                        <input type="checkbox" name="" id="">
+                        <label for="">
+                            <p>이용약관 <span class="txt-blue">(필수)</span></p>
+                        </label>
+                    </div>
+        
+                    <div class="agree-area mt-2">
+                        <p>
+                            내용내용내용내용내용내용내용내용내용내용내용내용내
+                            내용내용내용내용내용내용내용내용내용내용내용내용내
+                            내용내용내용내용내용내용내용내용내용내용내용내용내
+                            내용내용내용내용내용내용내용내용내용내용내용내용내
+                            내용내용내용내용내용내용내용내용내용내용내용내용내
                         </p>
                     </div>
-
-                    <p class="tit v4 mt-6">메시지 미리보기</p>
-
-<textarea name="" id="" class="textarea v1 mt-2" readonly>안녕하세요.
-장례지도사 000입니다.
-
-수익형 장례지도사 부고생성 서비스
-국민부고에서 쉽고 빠르고 부고 생성하고
-추가 수익과 의전 커뮤니티를 즐겨보세요.
-
-아래의 국민부고 서비스 회원가입 진행시
-추천 아이디에 dfadfaf를 입력하여 주세요.
-
-http://www.000.co.kr/registe
-
-감사합니다.
-
-000 드림</textarea>
-                    <button class="btn lg line-blue rnd mt-2">추천 메시지 복사</button>
-
-                    <div class="share mt-8">
-                        <p class="tit">공유하기</p>
-                        <ul>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="ic-share-message"></i>
-                                    <p>문자 메시지</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="ic-share-kakao"></i>
-                                    <p>카카오톡</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="ic-share-band"></i>
-                                    <p>네이버 밴드</p>
-                                </a>
-                            </li>
-                        </ul>
+                    
+                    <div class="check v1 mt-4">
+                        <input type="checkbox" name="" id="">
+                        <label for="">
+                            <p>개인정보 수집 및 이용 <span class="txt-blue">(필수)</span></p>
+                        </label>
+                    </div>
+        
+                    <div class="agree-area mt-2">
+                        <p>
+                            내용내용내용내용내용내용내용내용내용내용내용내용내
+                            내용내용내용내용내용내용내용내용내용내용내용내용내
+                            내용내용내용내용내용내용내용내용내용내용내용내용내
+                            내용내용내용내용내용내용내용내용내용내용내용내용내
+                            내용내용내용내용내용내용내용내용내용내용내용내용내
+                        </p>
+                    </div>
+        
+                    <button class="btn md rnd fill-dark mt-4"><i class="ic-agree white"></i>모두 동의합니다.</button>
+                </div>
+            </div>
+            <div class="division">
+                <div class="inner">
+                    <p class="tit v2">가입유형 선택</p>
+        
+                    <div class="d-flex column-gap-4">
+                        <div class="radio v1 mt-4">
+                            <input type="radio" name="" id="" checked>
+                            <label for="">
+                                <p>장례지도사</p>
+                            </label>
+                        </div>
+                        <div class="radio v1 mt-4">
+                            <input type="radio" name="" id="">
+                            <label for="">
+                                <p>일반회원 (개인,단체)</p>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
+        
         </div>
     </div>
     <!-- // content -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="float">
+            <div class="inner">
+                <div class="btn-wrap"><button class="btn lg fill-blue" disabled>다음</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- // footer -->
 
     <!-- 팝업: 로그아웃 -->
     <div class="modal fade" id="popAlertLogout">
@@ -172,35 +188,5 @@ http://www.000.co.kr/registe
         </div>
     </div>
     <!--// 팝업: 로그아웃 -->
-
-    <!-- 팝업: 상조사 조사 -->
-    <div class="modal fade" id="popCompleteSettle">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title">신청 완료</h1>
-                </div>
-                <div class="modal-body">
-                    <p class="tit v3 txt-blue justify-content-center"><i class="ic-complete circle blue"></i>선정산 신청이 완료되었습니다.</p>
-                    <div class="settle-guide">
-                        <p class="text01">
-                            회원가입시 기재한 계좌로 <br>
-                            빠른 시간내에 입금해 드리겠습니다.
-                        </p>
-                        <p class="text02">업무시간  08:00 ~ 18:00</p>
-                        <p class="text03">
-                            당일10:00 이전에 접수된 정산 신청은 <br>
-                            금일 지급되며, 이후 신청에 한하여 <br>
-                            다음날 입금될 수 있습니다.
-                        </p>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn lg fill-blue" data-bs-dismiss="modal" aria-label="Close">확인</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--// 팝업: 상조사 조사 -->
 </body>
 </html>

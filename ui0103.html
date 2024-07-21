@@ -10,21 +10,21 @@
     <meta name="format-detection" content="telephone=no" />
     
     <!-- dist/css -->
-    <link href="../dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+    <link href="./dist/css/bootstrap.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+    <link href="./dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
 
     <!-- custom css -->
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
 
     <!-- jquery -->
-    <script src="../js/jquery.min.js"></script>
+    <script src="./js/jquery.min.js"></script><!-- 20240717 수정 -->
 
     <!-- dist/js -->
-    <script src="../dist/js/bootstrap.bundle.js"></script>
-    <script src="../dist/js/swiper-bundle.min.js"></script>
+    <script src="./dist/js/bootstrap.bundle.js"></script><!-- 20240717 수정 -->
+    <script src="./dist/js/swiper-bundle.min.js"></script><!-- 20240717 수정 -->
     
     <!-- custom js -->
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script><!-- 20240717 수정 -->
 </head>
 <body>
     <!-- header -->
@@ -83,7 +83,7 @@
 
             <!-- case2: 서브 -->
             <button class="btn-ic btn-gnb-back"></button>
-            <h2>부고 수정</h2>
+            <h2>부고 만들기</h2>
             <!--// case2: 서브 -->
         </div>
     </div>
@@ -94,69 +94,31 @@
         <div class="obituary">
             <div class="division">
                 <div class="inner">
-                    <p class="txt-guide">이름과 휴대폰 번호를 입력하세요.</p>
-
-                    <div class="form row mt-6">
-                        <div class="form-tit">
-                            <p class="tit">이름</p>
-                        </div>
-
-                        <div class="form-cont">
-                            <input type="text" name="" id="">
-                        </div>
-                    </div>
-
-                    <div class="form row mt-4">
-                        <div class="form-tit">
-                            <p class="tit">휴대폰 번호</p>
-                        </div>
-
-                        <div class="form-cont">
-                            <div class="inp-wrap">
-                                <div class="inp-item">
-                                    <select name="" id="" class="select v1">
-                                        <option value="">010</option>
-                                    </select>
-                                </div>
-                                <div class="inp-item">
-                                    <input type="text" name="" id="">
-                                </div>
-                                <div class="inp-item">
-                                    <input type="text" name="" id="">
-                                </div>
+                    <div class="member-type pt-8">
+                        <a href="" class="member-item blue">
+                            <div class="img-area">
+                                <img src="./img/icon/ic_member.png" alt=""><!-- 20240717 수정 -->
                             </div>
-                        </div>
-                    </div>
-
-                    <button class="btn md rnd line-blue mt-4">인증번호 발송</button>
-                    <div class="form row mt-4">
-                        <div class="form-tit">
-                            <div class="tit-area">
-                                <p class="tit">아이디</p>
+                            <div class="cont-area">
+                                <p class="tit">회원</p>
+                                <p class="txt">로그인 후 부고 만들기</p>
                             </div>
-                        </div>
-                        <div class="form-cont">
-                            <div class="has-btn">
-                                <input type="text" name="" id="" placeholder="인증번호 입력 (4자리)">
-                                <button class="btn xs circle line-gray">확인</button>
+                        </a>
+                        <a href="" class="member-item dark">
+                            <div class="img-area">
+                                <img src="./img/icon/ic_member.png" alt=""><!-- 20240717 수정 -->
                             </div>
-                        </div>
+                            <div class="cont-area">
+                                <p class="tit">비회원</p>
+                                <p class="txt">부고 만들기</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- // content -->
-
-    <div id="footer">
-        <div class="float">
-            <div class="inner">
-                <div class="btn-wrap">
-                    <button class="btn lg fill-blue">확인<button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- 팝업: 로그아웃 -->
     <div class="modal fade" id="popAlertLogout">
