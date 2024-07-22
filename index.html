@@ -295,12 +295,14 @@
     </div>
     <!--// 팝업: 로그아웃 -->
 
+    <!-- 20240722 수정 -->
     <!-- 팝업: 이벤트 -->
     <div class="modal fade" id="popAlertEvent">
-        <div class="modal-dialog bottom alert">
+        <div class="modal-dialog bottom event">
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="inner">
+                        <button class="btn-term-block">7일간 보지 않기</button>
                         <img src="./img/common/img_event01.png" alt="">
                         <p class="text01">
                             프로모션 기간에는 <br>
@@ -308,8 +310,8 @@
                         </p>
                         <p class="text02">지금 회원가입하시고 추가 수수료를 받아가세요.</p>
 
-                        <button class="btn md rnd fill-blue">자세히 보기</button>
-                        <button class="btn md rnd line-blue">다음에 할께요</button>
+                        <button class="btn md rnd fill-blue mt-8" data-bs-target="#popApplyEvent" data-bs-toggle="modal">자세히 보기</button>
+                        <button class="btn md rnd line-blue mt-2" data-bs-dismiss="modal" aria-label="Close">다음에 할께요</button>
                     </div>
                 </div>
             </div>
@@ -318,29 +320,32 @@
     <!--// 팝업: 이벤트 -->
 
     <!-- 팝업: 이벤트 참여 -->
-    <div class="modal fade" id="popAlertLogout">
+    <div class="modal fade" id="popApplyEvent">
         <div class="modal-dialog modal-dialog-centered alert">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title">제목제목제목</h1>
+                    <h1 class="modal-title">제목제목제목제목</h1>
                 </div>
                 <div class="modal-body">
                     <div class="inner">
-                        <p class="txt-alert01"></p>
+                        <p class="txt-alert01 text-center">
+                            내용내용내용내용내용내용내용내용내용내용 <br>
+                            내용내용내용내용내용내용
+                        </p>
 
-                        <input type="text" name="" id="" placeholder="이메일 입력">
+                        <input type="text" name="" id="" class="mt-4" placeholder="이메일 입력">
 
-                        <button class="btn md rnd fill-blue">버튼명</button>
-                        <button class="btn md rnd line-blue">다음에 할께요</button>
+                        <button class="btn md rnd fill-blue mt-4" data-bs-dismiss="modal" aria-label="Close">버튼명</button>
+                        <button class="btn md rnd line-blue mt-2" data-bs-dismiss="modal" aria-label="Close">다음에 할께요</button>
 
                         <div class="share-area">
                             <ul>
-                                <li><button class="btn-ic btn-share-facebook"></button></li>
-                                <li><button class="btn-ic btn-share-insta"></button></li>
-                                <li><button class="btn-ic btn-share-pinterest"></button></li>
-                                <li><button class="btn-ic btn-share-tiktok"></button></li>
-                                <li><button class="btn-ic btn-share-youtube"></button></li>
-                                <li><button class="btn-ic btn-share-twiter"></button></li>
+                                <li><button class="btn-ic btn-share-facebook dark"></button></li>
+                                <li><button class="btn-ic btn-share-insta dark"></button></li>
+                                <li><button class="btn-ic btn-share-pinterest dark"></button></li>
+                                <li><button class="btn-ic btn-share-tiktok dark"></button></li>
+                                <li><button class="btn-ic btn-share-youtube dark"></button></li>
+                                <li><button class="btn-ic btn-share-twiter dark"></button></li>
                             </ul>
                         </div>
                     </div>
@@ -349,5 +354,6 @@
         </div>
     </div>
     <!--// 팝업: 이벤트 참여 -->
+    <!--// 20240722 수정 -->
 </body>
 </html>

@@ -739,12 +739,26 @@ select::-ms-expand{ display: none; }
 .btn-cancel {width: 2rem; height: 2rem;}
 .btn-cancel.circle.gray {background-image: url('../img/icon/ic_cancel_c_g.png')}
 .btn-guide {width: 2.4rem; height: 2.4rem; background-image: url('../img/icon/ic_guide.png');}
+.btn-share-facebook {width: 2rem; height: 2rem;}
+.btn-share-facebook.dark {background-image: url('../img/icon/ic_share_facebook_d.png')}
+.btn-share-insta {width: 2rem; height: 2rem;}
+.btn-share-insta.dark {background-image: url('../img/icon/ic_share_insta_d.png')}
+.btn-share-pinterest {width: 2rem; height: 2rem;}
+.btn-share-pinterest.dark {background-image: url('../img/icon/ic_share_pinterest_d.png')}
+.btn-share-tiktok {width: 2rem; height: 2rem;}
+.btn-share-tiktok.dark {background-image: url('../img/icon/ic_share_tiktok_d.png')}
+.btn-share-youtube {width: 2rem; height: 2rem;}
+.btn-share-youtube.dark {background-image: url('../img/icon/ic_share_youtube_d.png')}
+.btn-share-twiter {width: 2rem; height: 2rem;}
+.btn-share-twiter.dark {background-image: url('../img/icon/ic_share_twiter_d.png')}
 
 .btn-link {display: flex; align-items: center; justify-content: space-between; height: 5.6rem; padding-right: 3rem; text-decoration: none; background: url('../img/icon/ic_link_g.png') no-repeat right center; background-size: 2rem; border-radius: 1rem;}
 .btn-link.line {border: 1px solid #CED4DA; padding: 0.4rem 2rem; background-position: right 2rem center; height: 6.4rem;}
 .btn-link .txt-area {display: flex; align-items: center; gap: 0 0.4rem}
 .btn-link .txt-area .txt {color: var(--color-gray); font-size: 1.6rem; font-weight: 600;}
 .btn-link .etc-area .txt-price {font-weight: 600; font-size: 2rem; color: var(--color-gray-dark);}
+
+.btn-term-block {padding-left: 2.6rem; color: #ffffff; font-size: 1.4rem; font-weight: 600; background: url('../img/icon/ic_term_block_w.png') no-repeat left center; background-size: 2rem;}
 
 /* icon */
 i[class^='ic-'] {flex: none; display: block; background-repeat: no-repeat; background-position: center; background-size: 100%;}
@@ -1108,7 +1122,7 @@ input[type="password"]:focus {border-bottom-color: #343A40; outline: none;}
 #header .container {height: 6rem; display: flex; align-items: center; justify-content: space-between; padding-bottom: 0;}
 #header.on {}
 
-.logo {width: 6.7rem; height: 3rem; background: url('../img/common/logo_wordmark.png') no-repeat center; background-size: 100%;}
+.logo {width: 12.8rem; height: 2.4rem; background: url('../img/common/logo_wordmark.png') no-repeat center; background-size: 100%;}
 .logo a{ display: block; width: 100%; height: 100%; text-indent: -9999px; }
 
 .gnb {position: fixed; left: 0; top: 0; background-color: var(--bg-color); width: 100vw; height: 100dvh; z-index: 1041; transform: translateX(-100%); transition: all 0.3s; display: flex; flex-direction: column;}
@@ -1199,6 +1213,10 @@ input[type="password"]:focus {border-bottom-color: #343A40; outline: none;}
 .modal .modal-dialog.alert .modal-content .modal-body .inner {display: flex; align-items: center; justify-content: center; flex-direction: column; flex: 1 0;}
 .modal .modal-dialog.alert .modal-content .modal-body .inner .txt-alert01 {font-size: 1.4rem; text-align: center;}
 .modal .modal-dialog.alert .modal-content .modal-body .inner .txt-alert02 {font-size: 1.5rem; font-weight: 500; text-align: center;}
+
+.modal .modal-dialog.bottom {width: 100%; margin: 0; align-items: flex-end; display: flex; height: 100%;}
+.modal .modal-dialog.bottom .modal-content {border-radius: 2rem 2rem 0 0; border: 0; overflow: visible;}
+.modal .modal-dialog.bottom .modal-content .modal-body {padding: 4rem 1.6rem;}
 
 .popup .pop-head{}
 
@@ -1294,4 +1312,23 @@ input[type="password"]:focus {border-bottom-color: #343A40; outline: none;}
 .member-type .member-item.dark .cont-area .tit {color: #343A40;}
 .member-type .member-item.dark .cont-area .txt {color: #343A40;}
 
+.intro {min-height: 100dvh; background-color: var(--color-white); display: flex; align-items: center; justify-content: center; }
+.intro img {width: 31.7rem;}
+
+.login {min-height: 100dvh; background-color: var(--color-white); padding-top: 10rem;}
+.login .logo {width: 17rem; height: 3.2rem; margin: 0 auto;}
+.login .logo + .form {margin-top: 8rem;}
+.login .support {margin-top: 2rem; display: flex; align-items: center; justify-content: space-between;}
+.login .support .find-account a {display: block; padding-left: 1.8rem; background: url('../img/icon/ic_find.png') no-repeat left center; background-size: 1.4rem; color: var(--color-gray); font-weight: 500; font-size: 1.4rem;}
+.login .support + .btn {margin-top: 6rem;}
+
 /* 팝업 */
+#popAlertEvent .modal-dialog.bottom .modal-content .modal-body img {max-width: 13.6rem; margin: 0 auto;}
+#popAlertEvent .modal-dialog.bottom .modal-content .modal-body .text01 {margin-top: 2rem; text-align: center; font-size: 2.4rem; font-weight: 700;}
+#popAlertEvent .modal-dialog.bottom .modal-content .modal-body .text02 {margin-top: 1rem; text-align: center; font-size: 1.4rem; font-weight: 600; color: var(--color-gray)}
+#popAlertEvent .modal-dialog.bottom .modal-content .modal-body .btn-term-block {position: absolute; left: 1.6rem; top: -1rem; transform: translateY(-100%);}
+
+#popApplyEvent .modal-dialog.alert {width: calc(100vw - 3.2rem);}
+#popApplyEvent .modal-dialog .modal-content .modal-body {padding: 4rem 2rem;}
+#popApplyEvent .modal-dialog .modal-content .modal-body .share-area {margin-top: 2rem;}
+#popApplyEvent .modal-dialog .modal-content .modal-body .share-area ul {display: flex; align-items: center; justify-content: center; gap: 0 2rem;}
