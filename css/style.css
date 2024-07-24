@@ -922,6 +922,11 @@ i[class^='ic-'] {flex: none; display: block; background-repeat: no-repeat; backg
 .list-wrap.v6 ul li {font-size: 1.4rem; line-height: 1.5; padding-left: 1.8rem; position: relative;}
 .list-wrap.v6 ul li::before {content: ""; width: 0.2rem; height: 0.2rem; border-radius: 50%; background-color: var(--color-gray-dark); position: absolute; left: 0.8rem; top: 0.9rem;}
 
+.list-wrap.v7 ul li {border-bottom: 1px solid #E9ECEF;}
+.list-wrap.v7 ul li a {display: block; padding: 1rem 1rem; color: var(--color-gray-dark); font-weight: 600; font-size: 1.4rem; line-height: 1.5}
+.list-wrap.v7 ul li a .tit {font-size: 1.6rem;}
+.list-wrap.v7 ul li a .txt {font-weight: 400; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-break: break-all;}
+
 /* img list */
 .img-list{}
 
@@ -1321,6 +1326,15 @@ input[type="password"]:focus {border-bottom-color: #343A40; outline: none;}
 .login .support {margin-top: 2rem; display: flex; align-items: center; justify-content: space-between;}
 .login .support .find-account a {display: block; padding-left: 1.8rem; background: url('../img/icon/ic_find.png') no-repeat left center; background-size: 1.4rem; color: var(--color-gray); font-weight: 500; font-size: 1.4rem;}
 .login .support + .btn {margin-top: 6rem;}
+
+.customer {min-height: calc(100dvh - 6rem); background-color: var(--color-white); display: flex; flex-direction: column;}
+.customer .container {flex: 1 0; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem 0;}
+.customer .container > * {width: 100%;}
+.customer .operate-area {background-color: var(--bg-color); padding: 3rem 0; border-radius: 1rem;}
+.customer .operate-area .title {width: fit-content; margin: 0 auto; color: var(--color-gray); font-size: 1.4rem; padding-left: 2.4rem; line-height: 1.429;}
+.customer .operate-area .text {margin-top: 1rem; text-align: center; font-size: 2rem; line-height: 1.4; font-weight: 600;}
+.customer .btn-call {height: 8rem; border-radius: 1rem; background: #4C6EF5 url('../img/icon/ic_cs_call_c_c.png') no-repeat right 2rem center; background-size: 4rem; padding: 0 2rem; font-size: 2rem; font-weight: 600; color: var(--color-white); text-align: left;}
+.customer .btn-kakao {height: 8rem; border-radius: 1rem; background: #FAE100 url('../img/icon/ic_cs_kakao_c_c.png') no-repeat right 2rem center; background-size: 4rem; padding: 0 2rem; font-size: 2rem; font-weight: 600; text-align: left;}
 
 /* 팝업 */
 #popAlertEvent .modal-dialog.bottom .modal-content .modal-body img {max-width: 13.6rem; margin: 0 auto;}
