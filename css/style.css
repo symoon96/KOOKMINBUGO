@@ -917,7 +917,7 @@ i[class^='ic-'] {flex: none; display: block; background-repeat: no-repeat; backg
 .label.v3.clr02 {background-color: #CED4DA; color: var(--color-gray-dark);}
 
 /* tag */
-.tag.v1 {line-height: 2.2rem; border-radius: 2.2rem; background-repeat: no-repeat; background-size: 1.2rem; padding: 0 1rem 0 2.6rem; font-size: 1.2rem; font-weight: 500; color: #ffffff;}
+.tag.v1 {line-height: 2.2rem; border-radius: 2.2rem; background-repeat: no-repeat; background-position: 1rem center; background-size: 1.2rem; padding: 0 1rem 0 2.6rem; font-size: 1.2rem; font-weight: 500; color: #ffffff;}
 .tag.v1.type01 {background-color: #E64980; background-image: url('../img/icon/ic_tag_01.png');}
 .tag.v1.type02 {background-color: #7905F2; background-image: url('../img/icon/ic_tag_02.png');}
 
@@ -981,7 +981,7 @@ i[class^='ic-'] {flex: none; display: block; background-repeat: no-repeat; backg
 .list-wrap.v4 table tbody tr th {font-weight: 600}
 
 .list-wrap.v5 > ul > li + li {margin-top: 2rem;}
-.list-wrap.v5 ul li {border: 1px solid #E9ECEF; border-radius: 1rem; overflow: hidden;}
+.list-wrap.v5 > ul > li {border: 1px solid #E9ECEF; border-radius: 1rem; overflow: hidden;}
 .list-wrap.v5 > ul > li .item-head {background-color: #E9ECEF; padding: 1.6rem 2rem;}
 .list-wrap.v5 > ul > li .item-head p {font-weight: 600; font-size: 1.4rem;}
 .list-wrap.v5 > ul > li .item-head p.tit {font-size: 1.6rem; font-weight: 600;}
@@ -1044,6 +1044,7 @@ i[class^='ic-'] {flex: none; display: block; background-repeat: no-repeat; backg
 .list-wrap.v12 ul {display: flex; flex-wrap: wrap; gap: 2rem 1.6rem;}
 .list-wrap.v12 ul li {flex: none; width: calc((100% - 1.6rem)/2);}
 .list-wrap.v12 ul li .thumb {border: 1px solid var(--color-gray-light); border-radius: 1rem; background-color: var(--color-white); position: relative; padding-top: 100%;}
+.list-wrap.v12 ul li .thumb img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: cover;}
 .list-wrap.v12 ul li .thumb .tag {position: absolute; left: 0.8rem; top: 0.8rem;}
 .list-wrap.v12 ul li .text-area {padding-top: 1rem; padding-left: 0.4rem; padding-right: 0.4rem;}
 .list-wrap.v12 ul li .text-area .title {font-size: 1.4rem; font-weight: 500; color: var(--color-gray-dark); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-break: break-all;}
@@ -1497,19 +1498,20 @@ input[type="password"]:focus {border-bottom-color: #343A40; outline: none;}
 .story .text-guide {margin-top: 1rem; text-align: center; color: #748FFC; font-size: 1.3rem; font-weight: 600;}
 .story .list-wrap.v9 {margin-left: -1.6rem; margin-right: -1.6rem; width: calc(100% + 3.2rem);}
 
-.product .tab-wrap.v1 .tab-content tab-pane .best {width: 100vw; margin-left: -1.6rem; margin-right: -1.6rem; background-color: var(--color-gray-light); padding: 2rem 0; overflow: hidden;}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul {display: flex; padding: 0 1.6rem; width: 100%; overflow: auto; -ms-overflow-style: none; scrollbar-width: none; gap: 0 2rem;}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul::-webkit-scrollbar {display: none;}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul li {flex: none; width: 20rem;}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul li .thumb {border: 1px solid var(--color-gray-light); border-radius: 1rem; background-color: var(--color-white); position: relative; padding-top: 100%;}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul li .thumb .tag {position: absolute; left: 0.8rem; top: 0.8rem;}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul li .text-area {padding-top: 1rem; padding-left: 0.8rem; padding-right: 0.8rem;}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul li .text-area .title {font-size: 1.4rem; font-weight: 500; color: var(--color-gray-dark); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-break: break-all;}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul li .text-area .cost {font-size: 1.3rem; color: var(--color-gray); text-decoration: line-through;}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul li .text-area .title + cost {margin-top: 0.4rem;}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul li .text-area .price-area {display: flex; align-items: center; justify-content: space-between;}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul li .text-area .price {font-size: 1.6rem; font-weight: 700; color: var(--color-gray-dark);}
-.product .tab-wrap.v1 .tab-content tab-pane .best ul li .text-area .discount {color: var(--color-orange); font-size: 1.4rem; font-weight: 600;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best {width: 100vw; margin-left: -1.6rem; margin-right: -1.6rem; background-color: var(--color-gray-light); padding: 2rem 0; overflow: hidden;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul {display: flex; padding: 0 1.6rem; width: 100%; overflow: auto; -ms-overflow-style: none; scrollbar-width: none; gap: 0 2rem;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul::-webkit-scrollbar {display: none;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul li {flex: none; width: 20rem;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul li .thumb {border: 1px solid var(--color-gray-light); border-radius: 1rem; background-color: var(--color-white); position: relative; padding-top: 100%;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul li .thumb img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: cover;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul li .thumb .tag {position: absolute; left: 0.8rem; top: 0.8rem;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul li .text-area {padding-top: 1rem; padding-left: 0.8rem; padding-right: 0.8rem;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul li .text-area .title {font-size: 1.4rem; font-weight: 500; color: var(--color-gray-dark); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-break: break-all;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul li .text-area .cost {font-size: 1.3rem; color: var(--color-gray); text-decoration: line-through;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul li .text-area .title + cost {margin-top: 0.4rem;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul li .text-area .price-area {display: flex; align-items: center; justify-content: space-between;}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul li .text-area .price {font-size: 1.6rem; font-weight: 700; color: var(--color-gray-dark);}
+.product .tab-wrap.v1 .tab-content .tab-pane .best ul li .text-area .discount {color: var(--color-orange); font-size: 1.4rem; font-weight: 600;}
 
 /* 팝업 */
 #popAlertEvent .modal-dialog.bottom .modal-content .modal-body img {max-width: 13.6rem; margin: 0 auto;}
