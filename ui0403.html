@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>국민부고</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- dist/css -->
+    <link href="./dist/css/bootstrap.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+    <link href="./dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+
+    <!-- custom css -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+
+    <!-- jquery -->
+    <script src="./js/jquery.min.js"></script><!-- 20240717 수정 -->
+
+    <!-- dist/js -->
+    <script src="./dist/js/bootstrap.bundle.js"></script><!-- 20240717 수정 -->
+    <script src="./dist/js/swiper-bundle.min.js"></script><!-- 20240717 수정 -->
+    
+    <!-- custom js -->
+    <script src="./js/script.js"></script><!-- 20240717 수정 -->
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <!-- case1: 기본 -->
+            <!-- <h1 class="logo"><a href="javascript:void(0);"></a></h1>
+            <button class="btn-ic btn-gnb-open" type="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvas"></button>
+            
+            <div class="offcanvas gnb" aria-labelledby="offcanvasExampleLabel">
+                <div class="gnb-head">
+                    <button class="btn-ic btn-gnb-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="gnb-body">
+                    <div class="depth01">
+                        <ul>
+                            <li>
+                                <p><i class="ic-gnb01"></i>부고</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">부고 만들기</a></li>
+                                        <li><a href="javascript:void(0);">부고 수정</a></li>
+                                        <li><a href="javascript:void(0);">부고 보내기</a></li>
+                                        <li><a href="javascript:void(0);">부고 관리</a></li>
+                                        <li><a href="javascript:void(0);">추모 관리</a></li>
+                                        <li><a href="javascript:void(0);">부가서비스 관리</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb02"></i>MY</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">마이 페이지</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb03"></i>고객센터</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">이벤트</a></li>
+                                        <li><a href="javascript:void(0);">FAQ</a></li>
+                                        <li><a href="javascript:void(0);">이용약관</a></li>
+                                        <li><a href="javascript:void(0);">개인정보보호정책</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn md rnd fill-dark" data-bs-toggle="modal" data-bs-target="#popAlertLogout">로그아웃</button>
+                </div>
+            </div> -->
+            <!--// case1: 기본-->
+
+            <!-- case2: 서브 -->
+            <button class="btn-ic btn-gnb-back"></button>
+            <h2>근조화환 보내기</h2>
+            <!--// case2: 서브 -->
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content" class="sub">
+        <div class="product">
+            <div class="division">
+                <div class="product-detail">
+                    <div class="view-area">
+                        <img src="./img/sub/@temp_product.png" alt="">
+                        <p class="tag v1 type01">인기</p>
+                    </div>
+                    <div class="cont-area">
+                        <p class="tit">3단 특화환 2호 [N06]</p>
+                        <div class="price-wrap">
+                            <div class="price-area">
+                                <p class="price">2,600원</p>
+                                <p class="cost">3,000원</p>
+                            </div>
+                            <p class="discount">10%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="division">
+                <div class="tab-wrap v1 pt-2">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="lnav-item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabPane1" type="button" role="tab" aria-controls="tabPane1" aria-selected="true">주문/배송</button>
+                        </li>
+                        <li class="lnav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabPane2" type="button" role="tab" aria-controls="tabPane2" aria-selected="true">교환/환불</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane pt-6 pb-4 show active" id="tabPane1" role="tabPane1" aria-labelledby="tabPane1" tabindex="0">
+                            <div class="tit-wrap v2">
+                                <div class="tit-area">
+                                    <i class="ic-time line gray"></i>
+                                    <p class="tit v2">주문가능시간</p>
+                                </div>
+                            </div>
+                            <div class="focus-bx mt-4">
+                                <p class="tit">온라인</p>
+                                <p class="txt">국민부고 모바일 부고장 / 앱에서 24시간 자동주문</p>
+                            </div>
+                            <p class="txt-detail mt-2">결제완료시 주문내역을 알림톡 또는 문자메세지로 보내드리며, 리본문구 변경등 수정사항이 있으신 경우 결제완료후 30분 이내에 고객센터로 문의하여 주시기 바랍니다.</p>
+                            <div class="tit-wrap v2 mt-8">
+                                <div class="tit-area">
+                                    <i class="ic-ribbon line gray"></i>
+                                    <p class="tit v2">리본문구 수정 안내</p>
+                                </div>
+                            </div>
+                            <div class="focus-bx mt-4">
+                                <p class="txt">
+                                    리본문구 수정을 원하실 경우 반드시 <br>
+                                    주문 후 30분 이내에 고객센터로 연락해 주셔야 합니다.
+                                </p>
+                            </div>
+                            <p class="txt-detail mt-2">
+                                주문하신 화환의 빠른 배송을 위해 주문접수 30분 이내에 리본 제작을 완료하기에, 이후 수정을 원하실 때에는 리본추가 제작비와 경우에 따라 리본 별도배송을 위한 추가배송비를 부담하실 수 있습니다.<br><br>
+                                <span class="txt-indigo">주문완료전 다시 한번 리본문구를 확인해 주시기 바랍니다.</span>
+                            </p>
+                            <div class="tit-wrap v2 mt-8">
+                                <div class="tit-area">
+                                    <i class="ic-delivery line gray"></i>
+                                    <p class="tit v2">배송 안내</p>
+                                </div>
+                            </div>
+                            <div class="focus-bx mt-4">
+                                <p class="txt">
+                                    국내 전지역 평일 3시간, 주말 4시간 안에 배송됩니다. <br>
+                                    (천재지변 또는 도로교통상황에 따라 지연될 수 있음)
+                                </p>
+                            </div>
+                            <p class="txt-detail mt-2">
+                                <span class="txt-indigo">당일 19시 이전(서울 시내 당일 20시 이전) 결제완료 상품은 당일 배송완료되며, 이후 결제완료 상품은 익일 오전 9시부터 순차적으로 배송됩니다.</span> <br><br>
+                                도서 산간 또는 시군 소재지에서 멀리 떨어진 일부 지역의 경우 배송이 지연될 수 있으며, 고객센터에서 개별 안내해 드립니다. <br><br>
+                                배송완료시 화환사진을 알림톡 또는 문자메시지로 보내드립니다.
+                            </p>
+                        </div>
+                        <div class="tab-pane pt-6 pb-4" id="tabPane2" role="tabPane2" aria-labelledby="tabPane2" tabindex="0">
+                            <div class="tit-wrap v2">
+                                <div class="tit-area">
+                                    <i class="ic-time line gray"></i>
+                                    <p class="tit v2">주문가능시간</p>
+                                </div>
+                            </div>
+                            <div class="focus-bx mt-4">
+                                <p class="tit">온라인</p>
+                                <p class="txt">국민부고 모바일 부고장 / 앱에서 24시간 자동주문</p>
+                            </div>
+                            <p class="txt-detail mt-2">결제완료시 주문내역을 알림톡 또는 문자메세지로 보내드리며, 리본문구 변경등 수정사항이 있으신 경우 결제완료후 30분 이내에 고객센터로 문의하여 주시기 바랍니다.</p>
+                            <div class="tit-wrap v2 mt-8">
+                                <div class="tit-area">
+                                    <i class="ic-refund line gray"></i>
+                                    <p class="tit v2">환불 안내</p>
+                                </div>
+                            </div>
+                            <div class="focus-bx mt-4">
+                                <p class="txt">
+                                    상품 회수 후 환불이 가능합니다. <br>
+                                    (회수될 상품의 훼손 또는 부자재 누락의 경우 환불불가)
+                                </p>
+                            </div>
+                            <p class="txt-detail mt-2">
+                                결제 완료 후 30분 이내 요청시 배송 시작전인 경우 결제취소 또는 환불이 가능합니다. <br><br>
+                                상품이 품절되었거나 기타사유로 인해 배송이 불가능한 경우결제 취소 또는 환불해 드립니다.
+                            </p>
+                            <div class="tit-wrap v2 mt-8">
+                                <div class="tit-area">
+                                    <i class="ic-impossible line gray"></i>
+                                    <p class="tit v2">교환 및 환불 불가</p>
+                                </div>
+                            </div>
+                            <div class="focus-bx mt-4">
+                                <p class="txt">
+                                    생화로 만들어지는 상품의 특성상 주문후 제작 완료된 <br>
+                                    상품은 고객의 단순변심에 의한 교환 및 환불이 불가합니다.
+                                </p>
+                            </div>
+                            <p class="txt-detail mt-2">
+                                고객의 실수로 인한 배송지정보 기재오류 및 수령자의 수취거부등으로 인한 교환 및 환불은 불가하며, 이로 인한 배송지 변경시 제작비 및 배송비가 추가될 수 있습니다. <br><br>
+                                배송상품의 부속품과 상품구성 소재는 배송지역과 계절에 따라 이미지와 다소 차이가 있을 수 있으며, 이로 인한 교환 및 환불은 불가능합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="float">
+            <div class="inner">
+                <div class="btn-wrap"><button class="btn lg fill-blue">주문하기</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- // footer -->
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>국민부고</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- dist/css -->
+    <link href="./dist/css/bootstrap.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+    <link href="./dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+
+    <!-- custom css -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+
+    <!-- jquery -->
+    <script src="./js/jquery.min.js"></script><!-- 20240717 수정 -->
+
+    <!-- dist/js -->
+    <script src="./dist/js/bootstrap.bundle.js"></script><!-- 20240717 수정 -->
+    <script src="./dist/js/swiper-bundle.min.js"></script><!-- 20240717 수정 -->
+    
+    <!-- custom js -->
+    <script src="./js/script.js"></script><!-- 20240717 수정 -->
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <!-- case1: 기본 -->
+            <!-- <h1 class="logo"><a href="javascript:void(0);"></a></h1>
+            <button class="btn-ic btn-gnb-open" type="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvas"></button>
+            
+            <div class="offcanvas gnb" aria-labelledby="offcanvasExampleLabel">
+                <div class="gnb-head">
+                    <button class="btn-ic btn-gnb-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="gnb-body">
+                    <div class="depth01">
+                        <ul>
+                            <li>
+                                <p><i class="ic-gnb01"></i>부고</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">부고 만들기</a></li>
+                                        <li><a href="javascript:void(0);">부고 수정</a></li>
+                                        <li><a href="javascript:void(0);">부고 보내기</a></li>
+                                        <li><a href="javascript:void(0);">부고 관리</a></li>
+                                        <li><a href="javascript:void(0);">추모 관리</a></li>
+                                        <li><a href="javascript:void(0);">부가서비스 관리</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb02"></i>MY</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">마이 페이지</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb03"></i>고객센터</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">이벤트</a></li>
+                                        <li><a href="javascript:void(0);">FAQ</a></li>
+                                        <li><a href="javascript:void(0);">이용약관</a></li>
+                                        <li><a href="javascript:void(0);">개인정보보호정책</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn md rnd fill-dark" data-bs-toggle="modal" data-bs-target="#popAlertLogout">로그아웃</button>
+                </div>
+            </div> -->
+            <!--// case1: 기본-->
+
+            <!-- case2: 서브 -->
+            <button class="btn-ic btn-gnb-back"></button>
+            <h2>판매등급</h2>
+            <!--// case2: 서브 -->
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content" class="sub">
+        <div class="grade">
+            <div class="division">
+                <div class="inner">
+                    <div class="tit-wrap v2">
+                        <div class="tit-area">
+                            <p class="tit v2">나의 등급</p>
+                        </div>
+                        <div class="etc-area"><button class="btn xs rounded-3 line-blue" data-bs-target="#popGuideLevel" data-bs-toggle="modal">등급안내</button></div>
+                    </div>
+                    
+                    <div class="my-grade">
+                        <div class="grade-head">
+                            <div class="title"><i class="ic-level lv02 md"></i><p>국민패밀리</p></div>
+                            <p class="text-benefit">화환 수수료 건당 5.2만원</p>
+                        </div>
+                        <div class="grade-body">
+                            <dl class="next-grade">
+                                <dt>다음 예상 등급</dt>
+                                <dd>국민마스터</dd>
+                            </dl>
+                            <p class="text">
+                                부고 3개 생성, 화환 12개, 부가서비스 1개 판매 <br>
+                                하면 등급이 올라요!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="division">
+                <div class="inner">
+                    <p class="tit v2">빠르게 등급을 올려볼까요?</p>
+                    <button class="btn-obituary" data-bs-target="#popAlert" data-bs-toggle="modal">부고 만들기</button>
+                    <div class="video-area"></div>
+                    <div class="condolence-banner"></div>
+                    <div class="ready-area"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <!-- 팝업: 이벤트 참여 -->
+    <div class="modal fade" id="popGuideLevel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">등급 안내</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <p class="text01">등급에 따라 혜택을 제공 받으세요.</p>
+                        <p class="text02">등급은 1년 단위로 리셋됩니다.</p>
+                        
+                        <div class="level-guide">
+                            <ul>
+                                <li>
+                                    <div class="level-icon">
+                                        <i class="ic-level lg lv01"></i>
+                                    </div>
+                                    <div class="cont-area">
+                                        <p class="title">국민파트너</p>
+                                        <p class="text-benefit">화환 수수료 건당 5만원</p>
+                                        <div class="condition-area">
+                                            <p>부고 생성 1회 이상</p>
+                                            <p>화환 1개</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="level-icon">
+                                        <i class="ic-level lg lv02"></i>
+                                    </div>
+                                    <div class="cont-area">
+                                        <p class="title">국민프렌드</p>
+                                        <p class="text-benefit">화환 수수료 건당 5만원</p>
+                                        <div class="condition-area">
+                                            <p>부고 생성 5회 이상</p>
+                                            <p>화환 10개</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="level-icon">
+                                        <i class="ic-level lg lv03"></i>
+                                    </div>
+                                    <div class="cont-area">
+                                        <p class="title">국민패밀리</p>
+                                        <p class="text-benefit">화환 수수료 건당 5.2만원</p>
+                                        <div class="condition-area">
+                                            <p>부고 생성 30회 이상</p>
+                                            <p>화환 50개</p>
+                                            <p>부가서비스 판매 10회</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="level-icon">
+                                        <i class="ic-level lg lv04"></i>
+                                    </div>
+                                    <div class="cont-area">
+                                        <p class="title">국민마스터</p>
+                                        <p class="text-benefit">화환 수수료 건당 5.5만원</p>
+                                        <div class="condition-area">
+                                            <p>부고 생성 50회 이상</p>
+                                            <p>화환 80개</p>
+                                            <p>부가서비스 판매 10회</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="level-icon">
+                                        <i class="ic-level lg lv05"></i>
+                                    </div>
+                                    <div class="cont-area">
+                                        <p class="title">국민VIP</p>
+                                        <p class="text-benefit">화환 수수료 건당 6만원 <br>상조사 메인 광고 1개월 무료</p>
+                                        <div class="condition-area">
+                                            <p>부고 생성 100회 이상</p>
+                                            <p>화환 150개</p>
+                                            <p>부가서비스 판매 30회</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="level-icon">
+                                        <i class="ic-level lg lv06"></i>
+                                    </div>
+                                    <div class="cont-area">
+                                        <p class="title">국민VIP</p>
+                                        <p class="text-benefit">화환 수수료 건당 6만원 <br>상조사 메인 광고 1개월 무료</p>
+                                        <div class="condition-area">
+                                            <p>부고 생성 100회 이상</p>
+                                            <p>화환 150개</p>
+                                            <p>부가서비스 판매 30회</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-foot">
+                    <button class="btn lg fill-blue" data-bs-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 이벤트 참여 -->
+
+    <!-- 팝업: 알림 -->
+    <div class="modal fade" id="popAlert">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">알림</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <i class="ic-complete green"></i>
+                        <p class="txt-alert02 mt-2">시작이 반입니다.</p>
+                        <p class="txt-alert01 mt-1">국민부고에서의 시작을 축하드립니다.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-blue" data-bs-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 알림 -->
+</body>
+</html>

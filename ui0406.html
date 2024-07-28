@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>국민부고</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- dist/css -->
+    <link href="./dist/css/bootstrap.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+    <link href="./dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+
+    <!-- custom css -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+
+    <!-- jquery -->
+    <script src="./js/jquery.min.js"></script><!-- 20240717 수정 -->
+
+    <!-- dist/js -->
+    <script src="./dist/js/bootstrap.bundle.js"></script><!-- 20240717 수정 -->
+    <script src="./dist/js/swiper-bundle.min.js"></script><!-- 20240717 수정 -->
+    
+    <!-- custom js -->
+    <script src="./js/script.js"></script><!-- 20240717 수정 -->
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <!-- case1: 기본 -->
+            <!-- <h1 class="logo"><a href="javascript:void(0);"></a></h1>
+            <button class="btn-ic btn-gnb-open" type="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvas"></button>
+            
+            <div class="offcanvas gnb" aria-labelledby="offcanvasExampleLabel">
+                <div class="gnb-head">
+                    <button class="btn-ic btn-gnb-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="gnb-body">
+                    <div class="depth01">
+                        <ul>
+                            <li>
+                                <p><i class="ic-gnb01"></i>부고</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">부고 만들기</a></li>
+                                        <li><a href="javascript:void(0);">부고 수정</a></li>
+                                        <li><a href="javascript:void(0);">부고 보내기</a></li>
+                                        <li><a href="javascript:void(0);">부고 관리</a></li>
+                                        <li><a href="javascript:void(0);">추모 관리</a></li>
+                                        <li><a href="javascript:void(0);">부가서비스 관리</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb02"></i>MY</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">마이 페이지</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb03"></i>고객센터</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">이벤트</a></li>
+                                        <li><a href="javascript:void(0);">FAQ</a></li>
+                                        <li><a href="javascript:void(0);">이용약관</a></li>
+                                        <li><a href="javascript:void(0);">개인정보보호정책</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn md rnd fill-dark" data-bs-toggle="modal" data-bs-target="#popAlertLogout">로그아웃</button>
+                </div>
+            </div> -->
+            <!--// case1: 기본-->
+
+            <!-- case2: 서브 -->
+            <button class="btn-ic btn-gnb-back"></button>
+            <h2>근조화환 보내기</h2>
+            <!--// case2: 서브 -->
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content" class="sub">
+        <div class="product">
+            <div class="division">
+                <div class="inner">
+                    <div class="payment-result complete">
+                        <i class="ic-complete green"></i>
+                        <p class="text mt-2">주문이 완료되었습니다.</p>
+                        <p class="text-name mt-2">실속 3단화환 1호 [No.1]</p>
+                    </div>
+                    <div class="form row mt-4 py-4 px-2 border-top border-gray-light">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit txt-blue">배송지(빈소)</p>
+                            </div>
+                        </div>
+                        <div class="form-cont pt-1">
+                            <p class="txt-inp txt-gray">
+                                <strong class="txt-dark ">강동 경희대학교 병원장례식장 21호실</strong> <br><br>
+                                서울특별시강동구동남로892 (상일동) <br>
+                                강동경희대학교병원장례식장 <br><br>
+                                홍길동(마테오) 상주
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="form row py-4 px-2 border-top border-bottom border-gray-light">
+                        <div class="form-tit">
+                            <div class="tit-area column-gap-2">
+                                <p class="tit txt-blue">화환 리본 문구</p>
+                            </div>
+                        </div>
+                        <div class="form-cont pt-1">
+                            <p class="txt-inp">
+                                <strong class="txt-dark ">
+                                    (주) OOOOOOOOOO<br>삼가 고인의 명복을 빕니다.
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="txt-normal text-center txt-blue mt-6">* 평일 3시간 / 주말 4시간 이내에 화환이 배송됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="float">
+            <div class="inner">
+                <div class="btn-wrap"><button class="btn lg fill-blue">확인</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- // footer -->
+</body>
+</html>

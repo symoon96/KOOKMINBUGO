@@ -1,0 +1,568 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>국민부고</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- dist/css -->
+    <link href="./dist/css/bootstrap.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+    <link href="./dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+
+    <!-- custom css -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+
+    <!-- jquery -->
+    <script src="./js/jquery.min.js"></script><!-- 20240717 수정 -->
+
+    <!-- dist/js -->
+    <script src="./dist/js/bootstrap.bundle.js"></script><!-- 20240717 수정 -->
+    <script src="./dist/js/swiper-bundle.min.js"></script><!-- 20240717 수정 -->
+    
+    <!-- custom js -->
+    <script src="./js/script.js"></script><!-- 20240717 수정 -->
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <!-- case1: 기본 -->
+            <!-- <h1 class="logo"><a href="javascript:void(0);"></a></h1>
+            <button class="btn-ic btn-gnb-open" type="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvas"></button>
+            
+            <div class="offcanvas gnb" aria-labelledby="offcanvasExampleLabel">
+                <div class="gnb-head">
+                    <button class="btn-ic btn-gnb-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="gnb-body">
+                    <div class="depth01">
+                        <ul>
+                            <li>
+                                <p><i class="ic-gnb01"></i>부고</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">부고 만들기</a></li>
+                                        <li><a href="javascript:void(0);">부고 수정</a></li>
+                                        <li><a href="javascript:void(0);">부고 보내기</a></li>
+                                        <li><a href="javascript:void(0);">부고 관리</a></li>
+                                        <li><a href="javascript:void(0);">추모 관리</a></li>
+                                        <li><a href="javascript:void(0);">부가서비스 관리</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb02"></i>MY</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">마이 페이지</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb03"></i>고객센터</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">이벤트</a></li>
+                                        <li><a href="javascript:void(0);">FAQ</a></li>
+                                        <li><a href="javascript:void(0);">이용약관</a></li>
+                                        <li><a href="javascript:void(0);">개인정보보호정책</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn md rnd fill-dark" data-bs-toggle="modal" data-bs-target="#popAlertLogout">로그아웃</button>
+                </div>
+            </div> -->
+            <!--// case1: 기본-->
+
+            <!-- case2: 서브 -->
+            <!-- <button class="btn-ic btn-gnb-back"></button>
+            <h2>보낸 답례품</h2> -->
+            <!--// case2: 서브 -->
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content" class="sub">
+        <div class="memoriam">
+            <div class="bulletin theme catholic">
+                <div class="funeral-area">
+                    <div class="logo"></div>
+                </div>
+                <div class="deceased-area">
+                    <p class="name">故 홍길녀</p>
+                    <div class="info">
+                        <p>남</p>
+                        <p>99세</p>
+                    </div>
+                    <p class="headline">
+                        故 홍길동님께서 <br>
+                        0월 0일 별세하셨기에 삼가 알려드립니다.
+                    </p>
+
+                    <div class="deceased-swiper">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/sub/@temp_deceased.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- <img src="./img/sub/@temp_deceased2.png" alt=""> -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sub/@temp_deceased.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- <img src="./img/sub/@temp_deceased2.png" alt=""> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-4">
+                    <div class="tit-wrap v4">
+                        <div class="tit-area">
+                            <p class="tit v9">장례정보</p>
+                        </div>
+                    </div>
+
+                    <div class="tbl-wrap v2 mt-4">
+                        <table>
+                            <colgroup>
+                                <col style="width: 3.5rem;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>빈소</th>
+                                    <td>OOOO장례식장 OO호실</td>
+                                </tr>
+                                <tr>
+                                    <th>입관</th>
+                                    <td>2024년 3월 10일</td>
+                                </tr>
+                                <tr>
+                                    <th>발인</th>
+                                    <td>2024년 3월 14일</td>
+                                </tr>
+                                <tr>
+                                    <th>장지</th>
+                                    <td>내용내용</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tit-wrap v4 mt-10" id="scrollPosition1">
+                        <div class="tit-area">
+                            <p class="tit v9">상주정보</p>
+                        </div>
+                    </div>
+
+                    <div class="tbl-wrap v2 mt-4">
+                        <table>
+                            <colgroup>
+                                <col style="width: 3.5rem;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>아들</th>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th>자부</th>
+                                    <td>김하은</td>
+                                </tr>
+                                <tr>
+                                    <th>딸</th>
+                                    <td>홍길순</td>
+                                </tr>
+                                <tr>
+                                    <th>손자</th>
+                                    <td>홍길동, 홍길남, 홍길서</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tit-wrap v4 mt-10" id="scrollPosition2">
+                        <div class="tit-area">
+                            <p class="tit v9">마음 전하실 곳</p>
+                        </div>
+                    </div>
+
+                    <div class="sympathy-area mt-4">
+                        <ul>
+                            <li class="selected">
+                                <div class="holder-area on">
+                                    <p class="name">홍길동</p>
+                                    <p class="relation">아들</p>
+                                </div>
+                                <p class="account">신한 000 000 000000 홍길동</p>
+                            </li>
+                        </ul>
+
+                        <button class="btn md fill-buddha-gold rounded-1 mt-1"><i class="ic-edit white"></i>등록/수정</button>
+                    </div>
+
+                    <div class="tit-wrap v4 mt-10">
+                        <div class="tit-area">
+                            <p class="tit v9">알리는 말씀</p>
+                        </div>
+                    </div>
+
+                    <p class="txt-normal mt-4">
+                        <strong>
+                            아버님 유언에 장례식 기간 동안 슬퍼하지 말고 <br>
+                            즐겁게 보내라 하셨습니다. 아버님 마음을 이해해 <br>
+                            주시길 바랍니다. <br><br>
+                            
+                            아들 홍길동 드림
+                        </strong>
+                    </p>
+
+                    <div class="tit-wrap v4 mt-10" id="scrollPosition3">
+                        <div class="tit-area">
+                            <p class="tit v9">오시는 길</p>
+                        </div>
+                    </div>
+
+                    <p class="tit v10 mt-4">OOOO 장례식장</p>
+
+                    <div class="tbl-wrap v2 mt-1">
+                        <table>
+                            <colgroup>
+                                <col style="width: 3.5rem;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>위치</th>
+                                    <td>
+                                        주소주 소주소주소 주소주소주 소주 소주소주소주소주 소주소 주소주 소주소
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>전화</th>
+                                    <td>00-1234-5678</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="location-guide mt-3">
+                        <button class="btn md txt-buddha-gold"><i class="ic-traffic line buddha-gold"></i>교통안내</button>
+                        <button class="btn md txt-buddha-gold"><i class="ic-parking line buddha-gold"></i>주차안내</button>
+                        <button class="btn md txt-buddha-gold"><i class="ic-navigation line buddha-gold"></i>네비게이션</button>
+                    </div>
+
+                    <div class="map-area mt-4">
+                        <img src="./img/sub/@temp_map.png" alt="">
+                    </div>
+
+                    <div class="location-guide mt-4">
+                        <button class="btn md txt-buddha-gold"><i class="ic-map line buddha-gold"></i>약도</button>
+                        <button class="btn md txt-buddha-gold"><i class="ic-call line buddha-gold"></i>전화</button>
+                    </div>
+                    
+                    <div class="tit-wrap v2 mt-10" id="scrollPosition4">
+                        <div class="tit-area">
+                            <p class="tit v9">근조화환 조문해주신 분</p>
+                        </div>
+                    </div>
+
+                    <div class="wreath-swiper mt-4">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/sub/img_wreath.png" alt="">
+                                    <p class="ment">삼가 고인의 명복을 빕니다.</p>
+                                    <p class="person">(주)OOOO 대표이사 홍길동</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sub/img_wreath.png" alt="">
+                                    <p class="ment">삼가 고인의 명복을 빕니다.</p>
+                                    <p class="person">(주)OOOO 대표이사 홍길동</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sub/img_wreath.png" alt="">
+                                    <p class="ment">삼가 고인의 명복을 빕니다.</p>
+                                    <p class="person">(주)OOOO 대표이사 홍길동</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sub/img_wreath.png" alt="">
+                                    <p class="ment">삼가 고인의 명복을 빕니다.</p>
+                                    <p class="person">(주)OOOO 대표이사 홍길동</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/sub/img_wreath.png" alt="">
+                                    <p class="ment">삼가 고인의 명복을 빕니다.</p>
+                                    <p class="person">(주)OOOO 대표이사 홍길동</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tit-wrap v2 mt-10" id="scrollPosition5">
+                        <div class="tit-area">
+                            <p class="tit v9">추모글</p>
+                        </div>
+                        <div class="etc-area"><button class="btn-txt v4 txt-buddha-gold"><i class="ic-write buddha-gold"></i>글쓰기</button></div>
+                    </div>
+
+                    <div class="memorial-swiper mt-4">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="profile">
+                                        <div class="img-area">
+                                            <img src="./img/sub/@temp_profile.png" alt="">
+                                        </div>
+                                        <p class="name">홍길동</p>
+                                        <p class="date">2024.05.01</p>
+                                    </div>
+                                    <p class="text">
+                                        아버지 저 막내에요. 잘 지내시죠? <br>
+                                        오늘따라 아버지가 많이 보고 싶네요. <br>
+                                        내용내용내용내용내용내용내용 <br>
+                                        용내용내용내용내용내용내용내용내용내용 <br>
+                                        내용내용내용내용내용내용내용내용내용
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="profile">
+                                        <div class="img-area">
+                                            <img src="./img/sub/@temp_profile.png" alt="">
+                                        </div>
+                                        <p class="name">홍길동</p>
+                                        <p class="date">2024.05.01</p>
+                                    </div>
+                                    <p class="text">
+                                        아버지 저 막내에요. 잘 지내시죠? <br>
+                                        오늘따라 아버지가 많이 보고 싶네요. <br>
+                                        내용내용내용내용내용내용내용 <br>
+                                        용내용내용내용내용내용내용내용내용내용 <br>
+                                        내용내용내용내용내용내용내용내용내용
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="profile">
+                                        <div class="img-area">
+                                            <img src="./img/sub/@temp_profile.png" alt="">
+                                        </div>
+                                        <p class="name">홍길동</p>
+                                        <p class="date">2024.05.01</p>
+                                    </div>
+                                    <p class="text">
+                                        아버지 저 막내에요. 잘 지내시죠? <br>
+                                        오늘따라 아버지가 많이 보고 싶네요. <br>
+                                        내용내용내용내용내용내용내용 <br>
+                                        용내용내용내용내용내용내용내용내용내용 <br>
+                                        내용내용내용내용내용내용내용내용내용
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="profile">
+                                        <div class="img-area">
+                                            <img src="./img/sub/@temp_profile.png" alt="">
+                                        </div>
+                                        <p class="name">홍길동</p>
+                                        <p class="date">2024.05.01</p>
+                                    </div>
+                                    <p class="text">
+                                        아버지 저 막내에요. 잘 지내시죠? <br>
+                                        오늘따라 아버지가 많이 보고 싶네요. <br>
+                                        내용내용내용내용내용내용내용 <br>
+                                        용내용내용내용내용내용내용내용내용내용 <br>
+                                        내용내용내용내용내용내용내용내용내용
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="profile">
+                                        <div class="img-area">
+                                            <img src="./img/sub/@temp_profile.png" alt="">
+                                        </div>
+                                        <p class="name">홍길동</p>
+                                        <p class="date">2024.05.01</p>
+                                    </div>
+                                    <p class="text">
+                                        아버지 저 막내에요. 잘 지내시죠? <br>
+                                        오늘따라 아버지가 많이 보고 싶네요. <br>
+                                        내용내용내용내용내용내용내용 <br>
+                                        용내용내용내용내용내용내용내용내용내용 <br>
+                                        내용내용내용내용내용내용내용내용내용
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tit-wrap v4 mt-10">
+                        <div class="tit-area">
+                            <p class="tit v9">부고 관리</p>
+                            <p class="txt">상주님에게만 노출됩니다.</p>
+                        </div>
+                    </div>
+
+                    <button class="btn md fill-buddha-gold rounded-1 mt-4"><i class="ic-edit white"></i>부고 수정</button>
+                    <button class="btn md fill-buddha-gold rounded-1 mt-1"><i class="ic-setting white"></i>부고 수정</button>
+                </div>
+
+                <div class="bulletin-footer">
+                    <dl class="cs-area">
+                        <dt><i class="ic-cs gray"></i>고객센터</dt>
+                        <dd><strong>1234-5678</strong> (오전 9시 ~ 오후 9시)</dd>
+                    </dl>
+
+                    <div class="fnb">
+                        <ul>
+                            <li><a href="javascript:void(0);">사업자정보 확인</a></li>
+                            <li><a href="javascript:void(0);">개인정보취급방침</a></li>
+                            <li><a href="javascript:void(0);">이용약관</a></li>
+                        </ul>
+                    </div>
+                    <p class="company">
+                        <strong>(주)0000 (대표이사000)</strong><br>
+                        사업자등록번호 : 000-00-00000<br>
+                        통신판매업신고번호 : 제0000-고양덕양-0000<br>
+                        경기도 고양시 일산동구 백마로 195 엠시티 섹션동 6층 9012-1<br>
+                        이메일 : QWERTY@NAVER.COM<br>
+                        개인정보처리책임자 : 김책임<br>
+                        COPYRIGHT @ 2024 다큐다. ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+
+                <div class="scroll-controller">
+                    <ul>
+                        <li><a href="#scrollPosition1">상주정보</a></li>
+                        <li><a href="#scrollPosition2">마음 <br>전하는 곳</a></li>
+                        <li><a href="#scrollPosition3">오시는 길</a></li>
+                        <li><a href="#scrollPosition4">근조화환 <br>보내신 분</a></li>
+                        <li><a href="#scrollPosition5">추모글 <br>보기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="float mt-0">
+            <div class="inner">
+                <div class="btn-wrap">
+                    <button class="btn lg fill-buddha-gold on gap-2"><i class="ic-send-message"></i>문자 보내기</button>
+                    <button class="btn lg fill-buddha-gold gap-2"><i class="ic-send-kakao"></i>카톡 보내기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // footer -->
+
+    <!-- 팝업: 마음 전하실 곳 -->
+    <div class="modal fade" id="popInfoAccount">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">마음 전하실 곳</h1>
+                    <button class="btn-ic btn-pop-close gray" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <dl class="text01">
+                            <dt>우리은행</dt>
+                            <dd>홍길동</dd>
+                        </dl>
+                        <p class="text02">123-456-123456</p>
+                        <button class="btn line-buddha-gold md rounded-1 txt-dark gap-2"><i class="ic-share-kakao"></i>카카오톡으로 받기</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-buddha-gold" data-bs-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 마음 전하실 곳 -->
+
+    <!-- 팝업: 부고 전달하기 -->
+    <div class="modal fade" id="popSendObituary">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">부고 전달하기</h1>
+                    <button class="btn-ic btn-pop-close gray" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <p class="text">부고 전달 방법을 선택하세요.</p>
+                        <button class="btn line-apricot md rounded-1 txt-dark mt-4 gap-2 on"><i class="ic-send-message"></i>문자전송</button>
+                        <button class="btn line-apricot md rounded-1 txt-dark mt-1 gap-2"><i class="ic-send-link"></i>링크복사</button>
+                        <button class="btn line-apricot md rounded-1 txt-dark mt-1 gap-2"><i class="ic-send-kakao"></i>카카오톡</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-buddha-gold" data-bs-target="#popConfirmObituary" data-bs-toggle="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 부고 전달하기 -->
+
+    <!-- 팝업: 부고 전달하기 -->
+    <div class="modal fade" id="popConfirmObituary">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">알림</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <i class="ic-warning red"></i>
+                        <p class="text01">
+                            故홍길동님 빈소는 <br>
+                            2021년 01월 01일 00시 00분에 <br>
+                            차려집니다.
+                        </p>
+                        <p class="text02">빈소가 차려진 후 부고 확인이 가능합니다.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-buddha-gold" data-bs-target="#popCheckObituary" data-bs-toggle="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 부고 전달하기 -->
+
+    <!-- 팝업: 부고 전달하기 -->
+    <div class="modal fade" id="popCheckObituary">
+        <div class="modal-dialog modal-dialog-centered alert">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">알림</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="inner">
+                        <i class="ic-warning red"></i>
+                        <p class="text">해당 부고는 발인되었습니다.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn lg fill-buddha-gold" data-bs-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 팝업: 부고 전달하기 -->
+</body>
+</html>

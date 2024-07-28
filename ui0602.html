@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>국민부고</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- dist/css -->
+    <link href="./dist/css/bootstrap.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+    <link href="./dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+
+    <!-- custom css -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css"><!-- 20240717 수정 -->
+
+    <!-- jquery -->
+    <script src="./js/jquery.min.js"></script><!-- 20240717 수정 -->
+
+    <!-- dist/js -->
+    <script src="./dist/js/bootstrap.bundle.js"></script><!-- 20240717 수정 -->
+    <script src="./dist/js/swiper-bundle.min.js"></script><!-- 20240717 수정 -->
+    
+    <!-- custom js -->
+    <script src="./js/script.js"></script><!-- 20240717 수정 -->
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <!-- case1: 기본 -->
+            <!-- <h1 class="logo"><a href="javascript:void(0);"></a></h1>
+            <button class="btn-ic btn-gnb-open" type="button" data-bs-toggle="offcanvas" data-bs-target=".offcanvas"></button>
+            
+            <div class="offcanvas gnb" aria-labelledby="offcanvasExampleLabel">
+                <div class="gnb-head">
+                    <button class="btn-ic btn-gnb-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="gnb-body">
+                    <div class="depth01">
+                        <ul>
+                            <li>
+                                <p><i class="ic-gnb01"></i>부고</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">부고 만들기</a></li>
+                                        <li><a href="javascript:void(0);">부고 수정</a></li>
+                                        <li><a href="javascript:void(0);">부고 보내기</a></li>
+                                        <li><a href="javascript:void(0);">부고 관리</a></li>
+                                        <li><a href="javascript:void(0);">추모 관리</a></li>
+                                        <li><a href="javascript:void(0);">부가서비스 관리</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb02"></i>MY</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">마이 페이지</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p><i class="ic-gnb03"></i>고객센터</p>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">이벤트</a></li>
+                                        <li><a href="javascript:void(0);">FAQ</a></li>
+                                        <li><a href="javascript:void(0);">이용약관</a></li>
+                                        <li><a href="javascript:void(0);">개인정보보호정책</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn md rnd fill-dark" data-bs-toggle="modal" data-bs-target="#popAlertLogout">로그아웃</button>
+                </div>
+            </div> -->
+            <!--// case1: 기본-->
+
+            <!-- case2: 서브 -->
+            <button class="btn-ic btn-gnb-back"></button>
+            <h2>보낸 답례품</h2>
+            <!--// case2: 서브 -->
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content" class="sub">
+        <div class="memoriam">
+            <div class="division">
+                <div class="inner">
+                    <p class="tit v2">작성자 정보</p>
+
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">이름</p>
+                            </div>
+                        </div>
+                        <div class="form-cont">
+                            <input type="text" name="" id="" placeholder="이름을 입력하세요">
+                        </div>
+                    </div>
+
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">비밀번호</p>
+                            </div>
+                        </div>
+                        <div class="form-cont">
+                            <input type="password" name="" id="" placeholder="비밀번호 (4자리 이상)">
+                        </div>
+                    </div>
+
+                    <div class="form row mt-4">
+                        <div class="form-tit">
+                            <div class="tit-area">
+                                <p class="tit">추모글 작성</p>
+                            </div>
+                        </div>
+                        <div class="form-cont pt-2">
+                            <div class="has-unit">
+                                <textarea name="" id="" class="textarea v2" placeholder="추모글 등록 (50자 이내)"></textarea>
+                                <p class="unit txt-bright-gray"><span class="txt-gray">0</span>/50</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-txt v3 mt-2 txt-buddha-gold"><i class="ic-reset buddha-gold"></i>다시쓰기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="float">
+            <div class="inner">
+                <div class="btn-wrap">
+                    <button class="btn lg fill-buddha-gold">추모글 등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // footer -->
+</body>
+</html>

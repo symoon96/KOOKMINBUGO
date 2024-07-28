@@ -10,10 +10,40 @@ $(document).ready(function(){
         },
     });
 
-    dateFormatChange()
+    const deceasedSwiper = new Swiper('.memoriam .bulletin .deceased-area .deceased-swiper .swiper', {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+        },
+        effect: "fade",
+        speed: 3000,
+    });
+
+    const wreathSwiper = new Swiper('.memoriam .bulletin .wreath-swiper .swiper', {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+        },
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        speed: 3000,
+        centeredSlides: true,
+    });
+
+    const memorialSwiper = new Swiper('.memoriam .bulletin .memorial-swiper .swiper', {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+        },
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        speed: 3000,
+        centeredSlides: true,
+    });
+
+    dateFormatChange();
+    importantStyle()
 })
-
-
 
 function dateFormatChange(){
     $('.date input[type="date"]').change(function(){
@@ -35,4 +65,16 @@ function openDubleModal(id, el){
     target.modal('show')
     thisEl.css('z-index', 1054)
     $('.modal-backdrop').last().css('z-index', 1054)
+}
+
+function importantStyle(){
+    if($('.form.row .form-tit .tit-area .tit').length > 0){
+        $('.form.row .form-tit .tit-area .tit').each(function(){
+            console.log()
+            if($(this).find('strong.txt-blue').length > 0){
+                $(this).closest('.form').addClass('imp')
+                $(this).closest('.form').find('input[type="text"], input[type="password"]').attr('required', 'required')
+            }
+        })
+    }
 }
