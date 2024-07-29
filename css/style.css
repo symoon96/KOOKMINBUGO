@@ -1442,7 +1442,7 @@ input[type="password"]:focus {border-bottom-color: #343A40; outline: none;}
 .upload .preview {width: 16rem; height: 16rem; border: 1px dashed #CED4DA; background: #F8F9FA url('../img/icon/ic_graphic.png') no-repeat center; background-size: 10rem; border-radius: 0.4rem; position: relative;}
 .upload .preview.portrait {width: 12rem; background: #F8F9FA url('../img/icon/ic_portrait.png') no-repeat center; background-size: 10rem;}
 .upload .preview img {position: absolute; width: 100%; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%); object-fit: contain;}
-.upload .preview::before {content: ""; width: 3.6rem; height: 3.6rem; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: url('../img/icon/ic_add_c_b_01.png') no-repeat center; background-size: 100%;}
+/* .upload .preview::before {content: ""; width: 3.6rem; height: 3.6rem; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: url('../img/icon/ic_add_c_b_01.png') no-repeat center; background-size: 100%;} */
 .upload .preview:has(img) {background: #F8F9FA;}
 .upload .preview:has(img)::before {display: none;}
 
